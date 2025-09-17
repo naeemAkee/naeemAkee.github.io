@@ -94,6 +94,56 @@ document.querySelectorAll('.project-card').forEach((card) => {
 	});
 });
 
+// Toast helper
+const showToast = (message, type = 'success') => {
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    // force reflow then show
+    requestAnimationFrame(() => toast.classList.add('show'));
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+};
+
+// Contact form: direct submit via FormSubmit (no email client)
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+	contactForm.addEventListener('submit', (e) => {
+		e.preventDefault();
+		const form = e.currentTarget;
+		const name = form.querySelector('input[name="name"]').value.trim();
+		const email = form.querySelector('input[name="email"]').value.trim();
+		const message = form.querySelector('textarea[name="message"]').value.trim();
+		if (!name || !email || !message) {
+			showToast('Please fill in all fields.', 'error');
+			return;
+		}
+		const payload = {
+			name,
+			email,
+			message,
+			_replyto: email,
+			_subject: `Portfolio contact from ${name}`,
+			_captcha: 'false'
+		};
+		const endpoint = 'https://formsubmit.co/ajax/naeem.akee@gmail.com';
+		fetch(endpoint, {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+			body: JSON.stringify(payload)
+		}).then(async (res) => {
+			if (!res.ok) throw new Error('Failed');
+			showToast('Message sent successfully!');
+			form.reset();
+		}).catch(() => {
+			showToast('Failed to send. Please try again later.', 'error');
+		});
+	});
+}
+
 // Scrollspy to highlight active nav link
 const sectionIds = ['about','skills','experience','projects','education','contact'];
 const idToNavLink = new Map(sectionIds.map((id) => [id, document.querySelector(`.nav-links a[href="#${id}"]`)]));
