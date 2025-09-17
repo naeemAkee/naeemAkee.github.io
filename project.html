@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Project — Naeem Akram</title>
+	<link rel="stylesheet" href="assets/css/styles.css" />
+	<style>
+		.project-hero { display:grid; gap:18px; grid-template-columns: 1.2fr 1fr; align-items:start; }
+		.project-hero .media { background: var(--card); border:1px solid var(--border); border-radius:18px; overflow:hidden; box-shadow: var(--shadow); }
+		.project-hero img { width:100%; height:100%; object-fit:cover; }
+		.project-hero .content { display:grid; gap:12px; }
+		.project-actions { display:flex; gap:10px; flex-wrap:wrap; }
+		@media (max-width: 900px){ .project-hero{ grid-template-columns:1fr; } }
+	</style>
+</head>
+<body>
+	<header class="site-header" id="top">
+		<nav class="nav container">
+			<a href="index.html#top" class="logo" aria-label="Home">MNA</a>
+			<ul class="nav-links">
+				<li><a href="index.html#projects">Back to Projects</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="section container">
+			<div class="project-hero">
+				<div class="media"><img id="p-image" alt="Project preview"/></div>
+				<div class="content">
+					<h1 id="p-title" class="section-title">Project</h1>
+					<p id="p-desc" class="section-text"></p>
+					<div id="p-tags" class="project-tags"></div>
+					<div class="project-actions">
+						<a id="p-app" class="btn primary" target="_blank" rel="noopener">Open in App Store</a>
+						<a id="p-demo" class="btn" target="_blank" rel="noopener">Demo / GitHub</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="site-footer"><div class="container"><p>© <span id="year"></span> Naeem Akram.</p></div></footer>
+	<script>
+		const params = new URLSearchParams(location.search);
+		const title = params.get('title') || 'Project';
+		const desc = params.get('desc') || '';
+		const image = params.get('image') || 'assets/img/placeholder-dark.svg';
+		const tags = (params.get('tags') || '').split(',').filter(Boolean);
+		const app = params.get('app') || '#';
+		const demo = params.get('demo') || 'https://github.com/naeemAkee'\;
+		document.getElementById('p-title').textContent = title;
+		document.getElementById('p-desc').textContent = desc;
+		document.getElementById('p-image').src = image;
+		const tagsEl = document.getElementById('p-tags');
+		tags.forEach(t=>{ const s=document.createElement('span'); s.textContent=t; tagsEl.appendChild(s); });
+		const appEl = document.getElementById('p-app'); appEl.href = app; appEl.ariaLabel = `Open ${title} in App Store`;
+		const demoEl = document.getElementById('p-demo'); demoEl.href = demo;
+		document.getElementById('year').textContent = new Date().getFullYear().toString();
+	</script>
+</body>
+</html>
