@@ -1,10 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
 	<defs>
 		<linearGradient id="lg" x1="0" x2="1" y1="0" y2="1">
-			<stop offset="0%" stop-color="#7c9aff"/>
-			<stop offset="100%" stop-color="#22d3ee"/>
+			<stop offset="0%" stop-color="#22d3ee"/>
+			<stop offset="100%" stop-color="#7c9aff"/>
 		</linearGradient>
 	</defs>
-	<rect width="64" height="64" rx="14" fill="#0f141a"/>
-	<path d="M18 44l7-24h6l7 24h-5l-1.5-6h-7l-1.5 6h-5zm10.2-10h5.6L31 24.6 28.2 34z" fill="url(#lg)"/>
+	<rect width="64" height="64" rx="14" fill="#0b0f14"/>
+	<g fill="none" stroke="url(#lg)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+		<path d="M12 46V18l10 14 10-14v28"/> <!-- M -->
+		<path d="M36 46V18l16 28V18"/> <!-- N -->
+		<path d="M12 18h16"/> <!-- A crossbar stylization -->
+	</g>
 </svg>
