@@ -197,6 +197,36 @@ if (contactForm) {
 	});
 }
 
+// Count-up animation for stat numbers
+const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const animateCount = (el) => {
+	const raw = el.textContent.trim();
+	const match = raw.match(/^(\d+(?:\.\d+)?)(.*)$/);
+	if (!match) return;
+	const target = parseFloat(match[1]);
+	const suffix = match[2];
+	if (prefersReduced) { el.textContent = target + suffix; return; }
+	const duration = 1200;
+	const start = performance.now();
+	const step = (now) => {
+		const p = Math.min((now - start) / duration, 1);
+		const eased = 1 - Math.pow(1 - p, 3);
+		const val = target % 1 === 0 ? Math.round(target * eased) : (target * eased).toFixed(1);
+		el.textContent = val + suffix;
+		if (p < 1) requestAnimationFrame(step);
+	};
+	requestAnimationFrame(step);
+};
+const statObserver = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			animateCount(entry.target);
+			statObserver.unobserve(entry.target);
+		}
+	});
+}, { threshold: 0.6 });
+document.querySelectorAll('.stat-num').forEach((el) => statObserver.observe(el));
+
 // Scrollspy to highlight active nav link
 const sectionIds = ['about','skills','experience','designs','projects','education','languages','contact'];
 const idToNavLink = new Map(sectionIds.map((id) => [id, document.querySelector(`.nav-links a[href="#${id}"]`)]));
