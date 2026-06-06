@@ -87,6 +87,33 @@ img { max-width: 100%; display: block; }
 .btn.ghost { background: transparent; }
 .btn.small { padding: 8px 12px; font-size: 14px; }
 
+/* Hero social icon links */
+.hero-socials { margin-top: 18px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.icon-link { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; color: var(--muted); text-decoration: none; border: 1px solid var(--border); background: rgba(255,255,255,0.03); transition: color .2s ease, border-color .2s ease, transform .15s ease, background .2s ease; }
+.icon-link:hover { color: var(--text); border-color: rgba(124,154,255,0.45); background: rgba(124,154,255,0.1); transform: translateY(-1px); }
+.icon-link svg { flex: 0 0 auto; }
+
+/* Stats band */
+.stats-band { padding: 8px 0 40px; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.stat { display: grid; gap: 4px; justify-items: center; text-align: center; padding: 22px 14px; background: var(--card); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); }
+.stat-num { font-size: clamp(28px, 4vw, 40px); font-weight: 800; background: linear-gradient(90deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.stat-label { color: var(--muted); font-size: 14px; }
+@media (max-width: 640px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* Skill groups */
+.skills-groups { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.skill-group { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; box-shadow: var(--shadow); }
+.skill-group-title { margin: 0 0 12px; font-size: 15px; color: var(--primary); letter-spacing: .4px; text-transform: uppercase; }
+@media (max-width: 720px) { .skills-groups { grid-template-columns: 1fr; } }
+
+/* Languages */
+.lang-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.lang-item { display: grid; gap: 4px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; box-shadow: var(--shadow); }
+.lang-name { font-weight: 700; font-size: 17px; }
+.lang-level { color: var(--muted); font-size: 14px; }
+@media (max-width: 640px) { .lang-list { grid-template-columns: 1fr; } }
+
 /* Profile avatar */
 .profile-wrap { display: grid; place-items: center; margin-bottom: 14px; }
 .profile-avatar {
@@ -153,10 +180,13 @@ img { max-width: 100%; display: block; }
 /* Stranger Chats hero-like layout */
 .design-card.design-hero { grid-template-columns: 1fr; background: #000; border: none; padding: 0; position: relative; }
 .design-card.design-hero .center { position: relative; z-index: 2; text-align: center; padding: 40px 16px; }
-.design-hero-stage { position: relative; height: 520px; overflow: hidden; display: grid; place-items: center; background: radial-gradient(900px 500px at 50% -10%, rgba(124,154,255,0.15), transparent 60%), #000; }
-.design-hero-stage .phone { position: absolute; width: min(420px, 42%); height: auto; object-fit: contain; filter: drop-shadow(0 40px 80px rgba(0,0,0,0.8)); }
-.design-hero-stage .phone-left { left: 0; transform: translateX(-8%) rotate(-6deg); }
-.design-hero-stage .phone-right { right: 0; transform: translateX(8%) rotate(6deg); }
+.design-hero-stage { position: relative; height: 560px; overflow: hidden; display: grid; place-items: center; background: radial-gradient(900px 500px at 50% -10%, rgba(124,154,255,0.18), transparent 60%), #000; }
+.design-hero-stage .phone { position: absolute; height: 500px; width: auto; max-width: 46%; object-fit: contain; border-radius: 28px; filter: drop-shadow(0 40px 80px rgba(0,0,0,0.8)); }
+.design-hero-stage .phone-left { left: 8%; transform: rotate(-6deg); z-index: 2; }
+.design-hero-stage .phone-right { right: 8%; transform: rotate(6deg); z-index: 1; }
+.design-eyebrow { display: inline-block; color: var(--accent); font-family: "JetBrains Mono", monospace; font-size: 13px; letter-spacing: .5px; }
+.center-tags { justify-content: center; }
+@media (max-width: 640px) { .design-hero-stage .phone { height: 360px; max-width: 48%; } .design-hero-stage { height: 420px; } }
 .design-hero-stage .vignette { position: absolute; left: 0; right: 0; bottom: -40px; height: 140px; background: radial-gradient(60% 100% at 50% 0%, rgba(0,0,0,0.75), rgba(0,0,0,0.2) 60%, transparent 100%); filter: blur(16px); pointer-events: none; }
 
 /* Education */

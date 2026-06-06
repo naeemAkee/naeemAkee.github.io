@@ -198,7 +198,7 @@ if (contactForm) {
 }
 
 // Scrollspy to highlight active nav link
-const sectionIds = ['about','skills','experience','designs','projects','education','contact'];
+const sectionIds = ['about','skills','experience','designs','projects','education','languages','contact'];
 const idToNavLink = new Map(sectionIds.map((id) => [id, document.querySelector(`.nav-links a[href="#${id}"]`)]));
 const spyObserver = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
