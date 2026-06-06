@@ -37,6 +37,9 @@
 	<main>
 		<section class="hero section container aos" aria-labelledby="hero-title">
 			<div class="hero-content">
+				<div class="profile-wrap aos" aria-hidden="false">
+					<img class="profile-avatar" src="assets/img/naeem-profile.jpg" onerror="this.src='assets/img/placeholder-dark.svg'" alt="Portrait of Muhammad Naeem Akram" loading="lazy" />
+				</div>
 				<h1 id="hero-title">Muhammad Naeem Akram</h1>
 				<p class="role">Senior iOS Developer</p>
 				<p class="tagline">Delivering secure, high‑impact mobile apps with clean architecture and polished UX.</p>
@@ -52,6 +55,42 @@
 					<a class="btn ghost" href="#contact">Contact Me</a>
 					<a class="btn primary" href="Naeem_Akram.pdf" download aria-label="Preview Resume (download)">Preview Resume</a>
 				</div>
+			</div>
+		</section>
+
+		<!-- Featured Designs -->
+		<section id="designs" class="section container aos" aria-labelledby="designs-title">
+			<h2 id="designs-title" class="section-title">Featured Designs</h2>
+			<div class="designs-grid">
+				<article class="design-card design-hero aos">
+					<div class="design-hero-stage">
+						<img class="phone phone-left" src="assets/img/placeholder-dark.svg" data-src="assets/img/stranger-left.jpg" alt="Stranger Chats list screen on phone" loading="lazy" decoding="async" />
+						<img class="phone phone-right" src="assets/img/placeholder-dark.svg" data-src="assets/img/stranger-right.jpg" alt="Stranger Chats chat screen on phone" loading="lazy" decoding="async" />
+						<div class="vignette" aria-hidden="true"></div>
+					</div>
+					<div class="design-content center">
+						<h3 class="design-title">Stranger Chats</h3>
+						<p class="design-desc">A Firebase programmatic UIKit chat app. Register, login, add friends by email, and chat with synced data in Firestore.</p>
+						<div class="design-actions">
+							<a class="btn primary" href="https://github.com/naeemAkee" target="_blank" rel="noopener">GitHub</a>
+							<a class="btn ghost" href="#projects">more info</a>
+						</div>
+					</div>
+				</article>
+
+				<article class="design-card aos reverse">
+					<div class="design-media right">
+						<img src="assets/img/placeholder-dark.svg" data-src="assets/img/stayfitshop.jpg" alt="StayFitShop SwiftUI storefront" loading="lazy" decoding="async" />
+					</div>
+					<div class="design-content">
+						<h3 class="design-title">StayFitShop</h3>
+						<p class="design-desc">SwiftUI shopping app with server‑driven products, Core Data caching, Cart, user profiles, and Checkout.</p>
+						<div class="design-actions">
+							<a class="btn primary" href="https://github.com/naeemAkee" target="_blank" rel="noopener">GitHub</a>
+							<a class="btn ghost" href="#projects">more info</a>
+						</div>
+					</div>
+				</article>
 			</div>
 		</section>
 

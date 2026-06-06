@@ -56,8 +56,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 	});
 });
 
-// Lazy load project images from data-src when visible
-const lazyImgs = document.querySelectorAll('.project-media img[data-src]');
+// Lazy load images with data-src (projects + designs)
+const lazyImgs = document.querySelectorAll('img[data-src]');
 const imgObserver = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
 		if (!entry.isIntersecting) return;
@@ -92,6 +92,59 @@ document.querySelectorAll('.project-card').forEach((card) => {
 		const params = new URLSearchParams({ title, desc, image, tags, app: app || '', demo });
 		window.location.href = `project.html?${params.toString()}`;
 	});
+});
+
+// Basic carousel for designs (swipe + arrows + dots)
+document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+    const track = carousel.querySelector('[data-track]');
+    const slides = Array.from(carousel.querySelectorAll('.carousel-slide'));
+    const prevBtn = carousel.querySelector('[data-prev]');
+    const nextBtn = carousel.querySelector('[data-next]');
+    const dotsWrap = carousel.querySelector('[data-dots]');
+    if (!track || slides.length === 0 || !dotsWrap) return;
+
+    let index = 0;
+    const to = (i) => {
+        index = (i + slides.length) % slides.length;
+        const x = -index * carousel.clientWidth;
+        track.style.transform = `translateX(${x}px)`;
+        dotsWrap.querySelectorAll('button').forEach((b, bi) => b.classList.toggle('active', bi === index));
+    };
+
+    // dots
+    slides.forEach((_, i) => {
+        const b = document.createElement('button');
+        b.addEventListener('click', () => to(i));
+        dotsWrap.appendChild(b);
+    });
+    to(0);
+
+    prevBtn?.addEventListener('click', () => to(index - 1));
+    nextBtn?.addEventListener('click', () => to(index + 1));
+
+    // resize
+    window.addEventListener('resize', () => to(index));
+
+    // drag/swipe
+    let startX = 0; let currentX = 0; let dragging = false; let startTime = 0;
+    const start = (x) => { dragging = true; startX = x; currentX = x; startTime = Date.now(); track.style.transition = 'none'; };
+    const move = (x) => { if (!dragging) return; currentX = x; const dx = currentX - startX; track.style.transform = `translateX(${-index * carousel.clientWidth + dx}px)`; };
+    const end = () => {
+        if (!dragging) return; dragging = false; track.style.transition = '';
+        const dx = currentX - startX; const dt = Date.now() - startTime;
+        const threshold = Math.min(120, carousel.clientWidth * 0.25);
+        if (dx > threshold || (dx > 40 && dt < 250)) to(index - 1);
+        else if (dx < -threshold || (dx < -40 && dt < 250)) to(index + 1);
+        else to(index);
+    };
+    // mouse
+    track.addEventListener('mousedown', (e) => start(e.clientX));
+    window.addEventListener('mousemove', (e) => move(e.clientX));
+    window.addEventListener('mouseup', end);
+    // touch
+    track.addEventListener('touchstart', (e) => start(e.touches[0].clientX), { passive: true });
+    window.addEventListener('touchmove', (e) => move(e.touches[0].clientX), { passive: true });
+    window.addEventListener('touchend', end);
 });
 
 // Toast helper
@@ -145,7 +198,7 @@ if (contactForm) {
 }
 
 // Scrollspy to highlight active nav link
-const sectionIds = ['about','skills','experience','projects','education','contact'];
+const sectionIds = ['about','skills','experience','designs','projects','education','contact'];
 const idToNavLink = new Map(sectionIds.map((id) => [id, document.querySelector(`.nav-links a[href="#${id}"]`)]));
 const spyObserver = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
