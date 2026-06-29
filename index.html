@@ -1,464 +1,1188 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Muhammad Naeem Akram — Senior iOS &amp; Flutter Developer</title>
-	<meta name="description" content="Portfolio of Muhammad Naeem Akram — Senior iOS & Flutter Developer with 7+ years building secure, high-impact mobile apps across crypto, fintech, telecom, and marketplace domains." />
-	<meta name="author" content="Muhammad Naeem Akram" />
-	<meta name="keywords" content="iOS Developer, Flutter Developer, Swift, SwiftUI, Dubai, Mobile Engineer, Naeem Akram" />
-	<meta name="theme-color" content="#0b0f14" />
-	<link rel="canonical" href="https://naeemakee.github.io/" />
-	<meta property="og:title" content="Muhammad Naeem Akram — Senior iOS & Flutter Developer" />
-	<meta property="og:description" content="7+ years building secure, high-impact mobile apps used by 30M+ people across crypto, fintech, telecom, and marketplace domains." />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://naeemakee.github.io/" />
-	<meta property="og:image" content="assets/img/naeem-profile.jpg" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Muhammad Naeem Akram — Senior iOS & Flutter Developer" />
-	<meta name="twitter:description" content="7+ years building secure, high-impact mobile apps used by 30M+ people." />
-	<meta name="twitter:image" content="assets/img/naeem-profile.jpg" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="assets/css/styles.css" />
-	<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "Person",
-		"name": "Muhammad Naeem Akram",
-		"jobTitle": "Senior iOS & Flutter Developer",
-		"telephone": "+971555249285",
-		"email": "naeem.akee@gmail.com",
-		"address": { "@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "UAE" },
-		"url": "https://naeemakee.github.io/",
-		"sameAs": [
-			"https://www.linkedin.com/in/naeemakee",
-			"https://github.com/naeemAkee"
-		],
-		"knowsAbout": ["Swift", "SwiftUI", "UIKit", "Flutter", "Dart", "Objective-C", "React Native", "iOS Development", "CI/CD"],
-		"alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Gujrat, Pakistan" }
-	}
-	</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
 </head>
 <body>
-	<a class="skip-link" href="#about">Skip to content</a>
-	<header class="site-header" id="top">
-		<nav class="nav container">
-			<a href="index.html#top" class="logo" aria-label="Home">MNA</a>
-			<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-			<ul class="nav-links">
-				<li><a href="#about">About</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#education">Education</a></li>
-				<li><a href="#languages">Languages</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:#07070b;color:#e8e8ee;font-family:'Manrope',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+::selection{background:#00e5a0;color:#07070b;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;}
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-track{background:#07070b;}
+::-webkit-scrollbar-thumb{background:#1c1c28;border-radius:10px;}
+::-webkit-scrollbar-thumb:hover{background:#00e5a0;}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes grad{0%{background-position:0% 50%}100%{background-position:300% 50%}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+@keyframes ringpulse{0%{transform:scale(.9);opacity:.7}70%{transform:scale(1.25);opacity:0}100%{opacity:0}}
+@keyframes ripple{0%{transform:translate(-50%,-50%) scale(.15);opacity:.5}100%{transform:translate(-50%,-50%) scale(1.9);opacity:0}}
+@keyframes gridmove{from{background-position:0 0,0 0}to{background-position:0 60px,60px 0}}
+@keyframes arcspin{to{transform:rotateX(62deg) rotate(360deg)}}
+@keyframes arcspin2{to{transform:rotateX(58deg) rotate(-360deg)}}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+@keyframes spin3d{from{transform:rotateX(0) rotateY(0)}to{transform:rotateX(360deg) rotateY(360deg)}}
+@keyframes buttonHover{0%{box-shadow:0 8px 40px rgba(0,229,160,0.28)}100%{box-shadow:0 14px 50px rgba(0,229,160,0.45)}}
+@keyframes glow{0%,100%{opacity:.8}50%{opacity:1}}
+@keyframes slideInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slideInDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+@media (max-width:900px){.hero-row{flex-direction:column!important;text-align:center;gap:30px!important}.hero-copy{align-items:center!important}.hero-headline{font-size:58px!important}.hero-stage-wrap{transform:scale(.82)}}
+@media (max-width:880px){.nav-links{display:none!important}.hero-name{font-size:64px!important}.two-col{grid-template-columns:1fr!important}.showcase-grid{grid-template-columns:1fr!important}}
+</style>
+</helmet>
 
-	<main>
-		<section class="hero section container aos" aria-labelledby="hero-title">
-			<div class="hero-content">
-				<div class="profile-wrap aos" aria-hidden="false">
-					<img class="profile-avatar" src="assets/img/naeem-profile.jpg" onerror="this.src='assets/img/placeholder-dark.svg'" alt="Portrait of Muhammad Naeem Akram" loading="lazy" />
-				</div>
-				<h1 id="hero-title">Muhammad Naeem Akram</h1>
-				<p class="role">Senior iOS &amp; Flutter Developer</p>
-				<p class="tagline">7+ years building secure, high‑impact mobile apps across crypto, fintech, telecom, and marketplace domains — with clean architecture and polished UX.</p>
-				<p class="hero-contact">
-					<a href="tel:+971555249285" aria-label="Phone">+971 55 524 9285</a>
-					<span class="dot">•</span>
-					<a href="mailto:naeem.akee@gmail.com" aria-label="Email">naeem.akee@gmail.com</a>
-					<span class="dot">•</span>
-					<span>Dubai, UAE</span>
-				</p>
-				<div class="hero-cta">
-					<a class="btn primary" href="#projects">View Projects</a>
-					<a class="btn ghost" href="#contact">Contact Me</a>
-					<a class="btn ghost" href="Naeem_Akram.pdf" target="_blank" rel="noopener" aria-label="View Resume (PDF)">View Resume</a>
-				</div>
-				<div class="hero-socials">
-					<a class="icon-link" href="https://www.linkedin.com/in/naeemakee" target="_blank" rel="noopener" aria-label="LinkedIn">
-						<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.25 8.25h4.5V23h-4.5V8.25zM8.5 8.25h4.31v2.02h.06c.6-1.14 2.07-2.34 4.26-2.34 4.56 0 5.4 3 5.4 6.9V23h-4.5v-6.55c0-1.56-.03-3.57-2.17-3.57-2.18 0-2.51 1.7-2.51 3.46V23h-4.5V8.25z"/></svg>
-						<span>LinkedIn</span>
-					</a>
-					<a class="icon-link" href="https://github.com/naeemAkee" target="_blank" rel="noopener" aria-label="GitHub">
-						<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.21.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 016 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12.01 12.01 0 0024 12.5C24 5.87 18.63.5 12 .5z"/></svg>
-						<span>GitHub</span>
-					</a>
-					<a class="icon-link" href="mailto:naeem.akee@gmail.com" aria-label="Email">
-						<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="currentColor"><path d="M2 4h20c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm10 7L2.5 6.5v1.2L12 12.2l9.5-4.5V6.5L12 11z"/></svg>
-						<span>Email</span>
-					</a>
-				</div>
-			</div>
-		</section>
+<div style="position:relative;width:100%;min-height:100vh;background:radial-gradient(1200px 600px at 80% -5%, rgba(0,229,160,0.10), transparent 60%), radial-gradient(900px 500px at 0% 30%, rgba(34,211,238,0.06), transparent 55%), #07070b;">
 
-		<section class="stats-band aos" aria-label="Career highlights">
-			<div class="container stats-grid">
-				<div class="stat"><span class="stat-num">7+</span><span class="stat-label">Years Experience</span></div>
-				<div class="stat"><span class="stat-num">30M+</span><span class="stat-label">Users Reached</span></div>
-				<div class="stat"><span class="stat-num">15+</span><span class="stat-label">Apps Shipped</span></div>
-				<div class="stat"><span class="stat-num">90+</span><span class="stat-label">APIs Integrated</span></div>
-			</div>
-		</section>
+  <div id="scroll-bar" style="position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,#00e5a0,#22d3ee,#00e5a0);z-index:200;box-shadow:0 0 20px #00e5a0,0 0 40px rgba(0,229,160,0.3);transition:width .1s cubic-bezier(.2,.8,.2,1);filter:drop-shadow(0 0 8px rgba(34,211,238,0.4));"></div>
+  <div id="grid-bg" style="position:fixed;inset:-60px 0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(0,229,160,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(0,229,160,0.06) 1px,transparent 1px);background-size:56px 56px;opacity:.5;mask-image:radial-gradient(circle at 50% 30%, #000 0%, transparent 85%);-webkit-mask-image:radial-gradient(circle at 50% 30%, #000 0%, transparent 85%);transition:opacity .6s ease;"></div>
 
-		<!-- Featured Project -->
-		<section id="designs" class="section container aos" aria-labelledby="designs-title">
-			<h2 id="designs-title" class="section-title">Featured Project</h2>
-			<div class="designs-grid">
-				<article class="design-card design-hero aos">
-					<div class="design-hero-stage">
-						<img class="phone phone-left" src="assets/img/placeholder-dark.svg" data-src="assets/img/stranger-chats-1.jpg" alt="TokenB Explorer seed phrase recovery screen" loading="lazy" decoding="async" />
-						<img class="phone phone-right" src="assets/img/placeholder-dark.svg" data-src="assets/img/stayfitshop.jpg" alt="TokenB Explorer secure wallet backup screen" loading="lazy" decoding="async" />
-						<div class="vignette" aria-hidden="true"></div>
-					</div>
-					<div class="design-content center">
-						<span class="design-eyebrow">Token 13 Software · Dubai · 2025</span>
-						<h3 class="design-title">TokenB Explorer</h3>
-						<p class="design-desc">A high-security crypto wallet built in SwiftUI. BIP‑39 seed-phrase generation and recovery, Keychain + biometric authentication, and SSL pinning — with real-time balance sync between iPhone and Apple Watch.</p>
-						<div class="project-tags center-tags">
-							<span>SwiftUI</span><span>BIP‑39</span><span>Keychain</span><span>Biometrics</span><span>SSL Pinning</span><span>Apple Watch</span>
-						</div>
-						<div class="design-actions">
-							<a class="btn primary" href="https://apps.apple.com/ae/app/tokenb-explorer/id6747426865" target="_blank" rel="noopener">View on App Store ↗</a>
-							<a class="btn ghost" href="#projects">View all projects</a>
-						</div>
-					</div>
-				</article>
-			</div>
-		</section>
+  <!-- ===== 3D APP-DEV BACKGROUND ===== -->
+  <div id="bg3d" style="position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;perspective:1100px;">
+    <div id="bg3d-scene" style="position:absolute;inset:0;transform-style:preserve-3d;will-change:transform;">
+      <span style="position:absolute;left:7%;top:16%;transform:translateZ(-420px);"><span style="display:inline-block;font:700 52px 'JetBrains Mono',monospace;color:rgba(0,229,160,0.19);animation:floatY 8s ease-in-out infinite;">&lt;/&gt;</span></span>
+      <span style="position:absolute;left:85%;top:21%;transform:translateZ(-260px);"><span style="display:inline-block;font:700 40px 'JetBrains Mono',monospace;color:rgba(34,211,238,0.19);animation:floatY 7s ease-in-out infinite .6s;">{ }</span></span>
+      <span style="position:absolute;left:19%;top:71%;transform:translateZ(-160px);"><span style="display:inline-block;font:600 24px 'JetBrains Mono',monospace;color:rgba(255,255,255,0.13);animation:floatY 9s ease-in-out infinite .3s;">func()</span></span>
+      <span style="position:absolute;left:71%;top:75%;transform:translateZ(-340px);"><span style="display:inline-block;font:600 22px 'JetBrains Mono',monospace;color:rgba(167,139,250,0.21);animation:floatY 7.5s ease-in-out infinite .9s;">async / await</span></span>
+      <span style="position:absolute;left:45%;top:11%;transform:translateZ(-520px);"><span style="display:inline-block;font:700 30px 'JetBrains Mono',monospace;color:rgba(34,211,238,0.15);animation:floatY 10s ease-in-out infinite;">=&gt;</span></span>
+      <span style="position:absolute;left:11%;top:44%;transform:translateZ(-90px);"><span style="display:inline-block;font:600 20px 'JetBrains Mono',monospace;color:rgba(0,229,160,0.17);animation:floatY 6.5s ease-in-out infinite .4s;">let x = 0x1F</span></span>
+      <span style="position:absolute;left:59%;top:39%;transform:translateZ(-300px);"><span style="display:inline-block;font:600 22px 'JetBrains Mono',monospace;color:rgba(255,255,255,0.11);animation:floatY 8.5s ease-in-out infinite 1.2s;">// TODO</span></span>
+      <span style="position:absolute;left:32%;top:29%;transform:translateZ(-200px);"><span style="display:inline-block;font:700 26px 'JetBrains Mono',monospace;color:rgba(167,139,250,0.19);animation:floatY 7.8s ease-in-out infinite .2s;">&gt;_</span></span>
+      <span style="position:absolute;left:90%;top:55%;transform:translateZ(-120px);"><span style="display:inline-block;font:600 18px 'JetBrains Mono',monospace;color:rgba(34,211,238,0.19);animation:floatY 6s ease-in-out infinite .7s;">SwiftUI</span></span>
+      <span style="position:absolute;left:4%;top:83%;transform:translateZ(-380px);"><span style="display:inline-block;font:700 34px 'JetBrains Mono',monospace;color:rgba(0,229,160,0.15);animation:floatY 9.5s ease-in-out infinite;">[ ]</span></span>
+      <span style="position:absolute;left:50%;top:85%;transform:translateZ(-220px);"><span style="display:inline-block;font:600 20px 'JetBrains Mono',monospace;color:rgba(255,255,255,0.13);animation:floatY 7.2s ease-in-out infinite .5s;">{ id: 0 }</span></span>
+      <span style="position:absolute;left:80%;top:7%;transform:translateZ(-150px);"><span style="display:inline-block;font:600 22px 'JetBrains Mono',monospace;color:rgba(167,139,250,0.17);animation:floatY 8.2s ease-in-out infinite 1s;">#define</span></span>
+      <span style="position:absolute;left:40%;top:62%;transform:translateZ(-470px);"><span style="display:inline-block;font:700 28px 'JetBrains Mono',monospace;color:rgba(255,255,255,0.10);animation:floatY 11s ease-in-out infinite;">( )</span></span>
+      <span style="position:absolute;left:26%;top:54%;transform:translateZ(-280px);"><span style="display:inline-block;width:40px;height:74px;border:2px solid rgba(34,211,238,0.30);border-radius:9px;animation:floatY 8s ease-in-out infinite .8s;"></span></span>
+      <span style="position:absolute;left:66%;top:17%;transform:translateZ(-100px);"><span style="display:inline-block;width:54px;height:30px;border:2px solid rgba(0,229,160,0.30);border-radius:15px;position:relative;animation:floatY 6.8s ease-in-out infinite .35s;"><span style="position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:rgba(0,229,160,0.38);"></span></span></span>
+      <span style="position:absolute;left:82%;top:64%;transform:translateZ(-340px);"><span style="display:inline-block;position:relative;width:78px;height:78px;transform-style:preserve-3d;animation:spin3d 22s linear infinite;"><span style="position:absolute;inset:0;border:1px solid rgba(34,211,238,0.30);transform:translateZ(39px);"></span><span style="position:absolute;inset:0;border:1px solid rgba(34,211,238,0.30);transform:rotateY(180deg) translateZ(39px);"></span><span style="position:absolute;inset:0;border:1px solid rgba(0,229,160,0.27);transform:rotateY(90deg) translateZ(39px);"></span><span style="position:absolute;inset:0;border:1px solid rgba(0,229,160,0.27);transform:rotateY(-90deg) translateZ(39px);"></span><span style="position:absolute;inset:0;border:1px solid rgba(167,139,250,0.27);transform:rotateX(90deg) translateZ(39px);"></span><span style="position:absolute;inset:0;border:1px solid rgba(167,139,250,0.27);transform:rotateX(-90deg) translateZ(39px);"></span></span></span>
+    </div>
+  </div>
 
-		<section id="about" class="section container aos" aria-labelledby="about-title">
-			<h2 id="about-title" class="section-title">About Me</h2>
-			<p class="section-text">Innovative and performance‑driven Senior iOS Developer with 7+ years building secure, high‑impact mobile apps across crypto wallet, fintech, telecom, and marketplace domains. I focus on scalable, testable architectures (MVVM, VIPER, BLoC), deep system integrations (biometrics, payments, push, maps), and polished SwiftUI UX. I thrive in Agile teams, leveraging CI/CD and analytics to drive retention and performance.</p>
-		</section>
+  <!-- ===== NAV ===== -->
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:16px 40px;backdrop-filter:blur(14px);background:rgba(7,7,11,0.55);border-bottom:1px solid rgba(255,255,255,0.06);">
+    <a href="#top" style="display:flex;align-items:center;gap:10px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;letter-spacing:-0.5px;">
+      <span style="display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,#00e5a0,#22d3ee);color:#07070b;font-weight:700;">N</span>
+      Naeem<span style="color:#00e5a0;">.</span>
+    </a>
+    <div class="nav-links" style="display:flex;align-items:center;gap:32px;font-size:14px;font-weight:500;color:#9a9aab;">
+      <a href="#about" style="transition:all .3s cubic-bezier(.2,.7,.2,1);position:relative;" style-hover="color:#00e5a0;">About</a>
+      <a href="#skills" style="transition:all .3s cubic-bezier(.2,.7,.2,1);position:relative;" style-hover="color:#22d3ee;">Skills</a>
+      <a href="#experience" style="transition:all .3s cubic-bezier(.2,.7,.2,1);position:relative;" style-hover="color:#a78bfa;">Experience</a>
+      <a href="#work" style="transition:all .3s cubic-bezier(.2,.7,.2,1);position:relative;" style-hover="color:#34d399;">Work</a>
+      <a href="#contact" style="transition:all .3s cubic-bezier(.2,.7,.2,1);position:relative;" style-hover="color:#f59e0b;">Contact</a>
+    </div>
+    <a href="assets/Naeem_Akram_Resume.pdf" download style="display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:rgba(0,229,160,0.1);border:1px solid rgba(0,229,160,0.3);color:#00e5a0;font-size:13px;font-weight:600;font-family:'JetBrains Mono',monospace;transition:all .25s cubic-bezier(.2,.7,.2,1);position:relative;overflow:hidden;" style-hover="background:#00e5a0;color:#07070b;box-shadow:0 0 26px rgba(0,229,160,0.4);transform:translateY(-2px);">↓ Resume</a>
+  </nav>
 
-		<section id="skills" class="section container aos" aria-labelledby="skills-title">
-			<h2 id="skills-title" class="section-title">Core Skills</h2>
-			<div class="skills-groups">
-				<div class="skill-group">
-					<h3 class="skill-group-title">Languages &amp; Frameworks</h3>
-					<ul class="chips" role="list">
-						<li class="chip">Swift</li>
-						<li class="chip">SwiftUI</li>
-						<li class="chip">UIKit</li>
-						<li class="chip">Objective‑C</li>
-						<li class="chip">Flutter</li>
-						<li class="chip">Dart</li>
-						<li class="chip">React Native</li>
-					</ul>
-				</div>
-				<div class="skill-group">
-					<h3 class="skill-group-title">Architectures</h3>
-					<ul class="chips" role="list">
-						<li class="chip">MVC</li>
-						<li class="chip">MVVM</li>
-						<li class="chip">VIPER</li>
-						<li class="chip">BLoC</li>
-					</ul>
-				</div>
-				<div class="skill-group">
-					<h3 class="skill-group-title">Tools &amp; Platforms</h3>
-					<ul class="chips" role="list">
-						<li class="chip">Xcode</li>
-						<li class="chip">Android Studio</li>
-						<li class="chip">GitHub</li>
-						<li class="chip">GitLab</li>
-						<li class="chip">Jenkins</li>
-						<li class="chip">Jira</li>
-						<li class="chip">Firebase</li>
-						<li class="chip">RESTful APIs</li>
-					</ul>
-				</div>
-				<div class="skill-group">
-					<h3 class="skill-group-title">Key Features</h3>
-					<ul class="chips" role="list">
-						<li class="chip">Push Notifications</li>
-						<li class="chip">CI/CD</li>
-						<li class="chip">Deep Linking</li>
-						<li class="chip">In‑App Purchases</li>
-						<li class="chip">VoIP</li>
-						<li class="chip">Chat</li>
-						<li class="chip">Maps</li>
-						<li class="chip">Biometric Auth</li>
-					</ul>
-				</div>
-			</div>
-		</section>
+  <!-- ===== CINEMATIC HERO ===== -->
+  <header id="top" style="position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding:110px 24px 70px;background:radial-gradient(1100px 720px at 50% 18%, #0c1826 0%, #070c14 55%, #04060a 100%);">
+    <canvas id="hero-canvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:.65;"></canvas>
 
-		<section id="experience" class="section container aos" aria-labelledby="experience-title">
-			<h2 id="experience-title" class="section-title">Experience</h2>
-			<div class="timeline">
-				<div class="timeline-item">
-					<h3 class="item-title">Senior iOS Developer — Token 13 Software L.L.C (Dubai)</h3>
-					<p class="item-meta">Apr 2025 — Present • Dubai, UAE</p>
-					<ul class="item-points">
-						<li>Developing TokenB Explorer crypto wallet with SwiftUI, seed phrase (BIP‑39), Keychain + biometrics, and SSL pinning.</li>
-						<li>Implemented real‑time data sync across iPhone and Apple Watch.</li>
-					</ul>
-				</div>
-				<div class="timeline-item">
-					<h3 class="item-title">Senior iOS Developer — DulSoft Limited (Remote)</h3>
-					<p class="item-meta">May 2023 — Apr 2025 • Remote</p>
-					<ul class="item-points">
-						<li>Built SwiftUI apps MEO Arina and Photo iD; added biometrics, offline cache, and robust API integration.</li>
-						<li>Reduced crash rate by ~30% via memory handling improvements and unit testing.</li>
-					</ul>
-				</div>
-				<div class="timeline-item">
-					<h3 class="item-title">Senior iOS Developer — Evamp & Saanga (Pakistan)</h3>
-					<p class="item-meta">Oct 2021 — Sep 2023</p>
-					<ul class="item-points">
-						<li>Rebuilt Jazz World app UI (10M+ users), improving retention by 15%.</li>
-						<li>Integrated 90+ APIs, deep links, analytics; led CI/CD with Jenkins and GitLab releases.</li>
-					</ul>
-				</div>
-				<div class="timeline-item">
-					<h3 class="item-title">iOS Developer — eBlock6 (Kuwait)</h3>
-					<p class="item-meta">Nov 2020 — Nov 2021</p>
-					<ul class="item-points">
-						<li>Delivered MyBookStore & Driver apps with Firebase, Core Location, and order tracking.</li>
-						<li>Improved launch performance by ~40% and optimized analytics tracking.</li>
-					</ul>
-				</div>
-				<div class="timeline-item">
-					<h3 class="item-title">iOS Developer — Xenex Media (Australia)</h3>
-					<p class="item-meta">May 2019 — Oct 2021</p>
-					<ul class="item-points">
-						<li>Built FreshFeelz, GoCycle, and iCentra apps with advanced UI/UX and payments/localization.</li>
-						<li>Created reusable modules to accelerate development across multiple apps.</li>
-					</ul>
-				</div>
-			</div>
-		</section>
+    <div id="hero-grid" style="position:absolute;left:50%;bottom:-12%;width:260%;height:60%;transform:translateX(-50%) perspective(620px) rotateX(71deg);transform-origin:bottom center;background-image:linear-gradient(rgba(34,211,238,0.16) 1px,transparent 1px),linear-gradient(90deg,rgba(34,211,238,0.16) 1px,transparent 1px);background-size:60px 60px;animation:gridmove 3s linear infinite;-webkit-mask-image:linear-gradient(to top,#000 0%,transparent 72%);mask-image:linear-gradient(to top,#000 0%,transparent 72%);z-index:0;pointer-events:none;"></div>
 
-		<section id="projects" class="section container aos" aria-labelledby="projects-title">
-			<h2 id="projects-title" class="section-title">Projects</h2>
-			<div class="projects-grid">
-				<article class="project-card aos" tabindex="0" data-app="https://apps.apple.com/ae/app/tokenb-explorer/id6747426865">
-					<div class="project-media">
-						<img src="assets/img/placeholder-dark.svg" data-src="assets/img/stranger-chats-3.jpg" alt="TokenB Explorer crypto wallet preview" loading="lazy" decoding="async" />
-						<div class="project-overlay" aria-hidden="true"><span>View on App Store ↗</span></div>
-					</div>
-					<div class="project-content">
-						<div class="project-head">
-							<img class="app-logo" src="assets/img/logos/tokenb.png" alt="TokenB Explorer icon" loading="lazy" decoding="async" />
-							<h3 class="project-title">TokenB Explorer</h3>
-						</div>
-						<p class="project-desc">Crypto wallet with SwiftUI, BIP‑39 seed phrase, Keychain + biometrics, SSL pinning, and real‑time sync to Apple Watch.</p>
-						<div class="project-tags"><span>SwiftUI</span><span>Security</span><span>Apple Watch</span></div>
-						<a class="btn small app-store-btn" href="https://apps.apple.com/ae/app/tokenb-explorer/id6747426865" target="_blank" rel="noopener">App Store ↗</a>
-					</div>
-				</article>
-				<article class="project-card aos" tabindex="0" data-app="https://apps.apple.com/pk/app/jazz-world-manage-my-number/id1441912305">
-					<div class="project-media">
-						<img src="assets/img/placeholder-dark.svg" data-src="assets/img/logos/jazzworld.png" alt="Jazz World carrier app preview" loading="lazy" decoding="async" />
-						<div class="project-overlay" aria-hidden="true"><span>View on App Store ↗</span></div>
-					</div>
-					<div class="project-content">
-						<div class="project-head">
-							<img class="app-logo" src="assets/img/logos/jazzworld.png" alt="Jazz World icon" loading="lazy" decoding="async" />
-							<h3 class="project-title">Jazz World (SIMOSA)</h3>
-						</div>
-						<p class="project-desc">Carrier utility app (10M+ users). Rebuilt UI, integrated 90+ APIs, deep links, and push—boosting retention by 15%.</p>
-						<div class="project-tags"><span>iOS</span><span>Deep Linking</span><span>Analytics</span></div>
-						<a class="btn small app-store-btn" href="https://apps.apple.com/pk/app/jazz-world-manage-my-number/id1441912305" target="_blank" rel="noopener">App Store ↗</a>
-					</div>
-				</article>
-				<article class="project-card aos" tabindex="0" data-app="https://apps.apple.com/pk/app/freshfeelz/id1528109857">
-					<div class="project-media">
-						<img src="assets/img/placeholder-dark.svg" data-src="assets/img/logos/freshfeelz.png" alt="FreshFeelz marketplace app preview" loading="lazy" decoding="async" />
-						<div class="project-overlay" aria-hidden="true"><span>View on App Store ↗</span></div>
-					</div>
-					<div class="project-content">
-						<div class="project-head">
-							<img class="app-logo" src="assets/img/logos/freshfeelz.png" alt="FreshFeelz icon" loading="lazy" decoding="async" />
-							<h3 class="project-title">FreshFeelz</h3>
-						</div>
-						<p class="project-desc">Marketplace for wellness/beauty bookings with Stripe payments, live availability, loyalty, and promo campaigns.</p>
-						<div class="project-tags"><span>iOS</span><span>Stripe</span><span>Maps</span></div>
-						<a class="btn small app-store-btn" href="https://apps.apple.com/pk/app/freshfeelz/id1528109857" target="_blank" rel="noopener">App Store ↗</a>
-					</div>
-				</article>
-				<article class="project-card aos" tabindex="0" data-app="https://apps.apple.com/us/app/gocycle/id1464633518">
-					<div class="project-media">
-						<img src="assets/img/placeholder-dark.svg" data-src="assets/img/logos/gocycle.png" alt="GoCycle fitness app preview" loading="lazy" decoding="async" />
-						<div class="project-overlay" aria-hidden="true"><span>View on App Store ↗</span></div>
-					</div>
-					<div class="project-content">
-						<div class="project-head">
-							<img class="app-logo" src="assets/img/logos/gocycle.png" alt="GoCycle icon" loading="lazy" decoding="async" />
-							<h3 class="project-title">GoCycle</h3>
-						</div>
-						<p class="project-desc">Real‑time GPS tracking, HealthKit sync, and social challenges; 40% faster loads and +25% engagement.</p>
-						<div class="project-tags"><span>HealthKit</span><span>Maps</span><span>Performance</span></div>
-						<a class="btn small app-store-btn" href="https://apps.apple.com/us/app/gocycle/id1464633518" target="_blank" rel="noopener">App Store ↗</a>
-					</div>
-				</article>
-				<article class="project-card aos" tabindex="0" data-app="https://apps.apple.com/az/app/id1112880542">
-					<div class="project-media">
-						<img src="assets/img/placeholder-dark.svg" data-src="assets/img/logos/bakcell.svg" alt="Bakcell carrier app preview" loading="lazy" decoding="async" />
-						<div class="project-overlay" aria-hidden="true"><span>View on App Store ↗</span></div>
-					</div>
-					<div class="project-content">
-						<div class="project-head">
-							<img class="app-logo" src="assets/img/logos/bakcell.svg" alt="Bakcell icon" loading="lazy" decoding="async" />
-							<h3 class="project-title">Bakcell</h3>
-						</div>
-						<p class="project-desc">Full‑featured telecom utility for Azerbaijan (5M+ users): tariffs, top‑ups, roaming, eSIMs, usage and bill payments.</p>
-						<div class="project-tags"><span>iOS</span><span>Firebase</span><span>Analytics</span></div>
-						<a class="btn small app-store-btn" href="https://apps.apple.com/az/app/id1112880542" target="_blank" rel="noopener">App Store ↗</a>
-					</div>
-				</article>
-				<article class="project-card aos" tabindex="0">
-					<div class="project-media">
-						<img src="assets/img/placeholder-dark.svg" data-src="assets/img/logos/narplus.svg" alt="Nar+ carrier app preview" loading="lazy" decoding="async" />
-						<div class="project-overlay" aria-hidden="true"><span>Preview</span></div>
-					</div>
-					<div class="project-content">
-						<div class="project-head">
-							<img class="app-logo" src="assets/img/logos/narplus.svg" alt="Nar+ icon" loading="lazy" decoding="async" />
-							<h3 class="project-title">Nar+</h3>
-						</div>
-						<p class="project-desc">Carrier app for Nar (Azerbaijan, 4M+ users) with multi‑number support, usage tracking, live chat, and notifications.</p>
-						<div class="project-tags"><span>iOS</span><span>Notifications</span><span>Multi‑number</span></div>
-					</div>
-				</article>
-				<article class="project-card aos" tabindex="0" data-app="https://apps.apple.com/pt/app/altice-arena/id1346114974">
-					<div class="project-media">
-						<img src="assets/img/placeholder-dark.svg" data-src="assets/img/logos/meoarina.svg" alt="MEO Arina app preview" loading="lazy" decoding="async" />
-						<div class="project-overlay" aria-hidden="true"><span>View on App Store ↗</span></div>
-					</div>
-					<div class="project-content">
-						<div class="project-head">
-							<img class="app-logo" src="assets/img/logos/meoarina.svg" alt="MEO Arina icon" loading="lazy" decoding="async" />
-							<h3 class="project-title">MEO Arina</h3>
-						</div>
-						<p class="project-desc">Official Altice Arena companion: schedules, push alerts, venue maps, in‑app ordering, and recommendations.</p>
-						<div class="project-tags"><span>SwiftUI</span><span>Push</span><span>Maps</span></div>
-						<a class="btn small app-store-btn" href="https://apps.apple.com/pt/app/altice-arena/id1346114974" target="_blank" rel="noopener">App Store ↗</a>
-					</div>
-				</article>
-				<article class="project-card aos" tabindex="0" data-app="https://apps.apple.com/us/app/photo-id-by-u-scope/id1277608552">
-					<div class="project-media">
-						<img src="assets/img/placeholder-dark.svg" data-src="assets/img/logos/photoid.png" alt="Photo iD app preview" loading="lazy" decoding="async" />
-						<div class="project-overlay" aria-hidden="true"><span>View on App Store ↗</span></div>
-					</div>
-					<div class="project-content">
-						<div class="project-head">
-							<img class="app-logo" src="assets/img/logos/photoid.png" alt="Photo iD icon" loading="lazy" decoding="async" />
-							<h3 class="project-title">Photo iD</h3>
-						</div>
-						<p class="project-desc">Field documentation: real‑time capture, voice‑to‑text labels, timestamps, offline sync, and instant PDF export.</p>
-						<div class="project-tags"><span>iOS</span><span>Core Data</span><span>Firebase</span></div>
-						<a class="btn small app-store-btn" href="https://apps.apple.com/us/app/photo-id-by-u-scope/id1277608552" target="_blank" rel="noopener">App Store ↗</a>
-					</div>
-				</article>
-				<article class="project-card aos" tabindex="0">
-					<div class="project-media">
-						<img src="assets/img/placeholder-dark.svg" data-src="assets/img/logos/mybookstore.svg" alt="MyBookStore app preview" loading="lazy" decoding="async" />
-						<div class="project-overlay" aria-hidden="true"><span>Preview</span></div>
-					</div>
-					<div class="project-content">
-						<div class="project-head">
-							<img class="app-logo" src="assets/img/logos/mybookstore.svg" alt="MyBookStore icon" loading="lazy" decoding="async" />
-							<h3 class="project-title">MyBookStore</h3>
-						</div>
-						<p class="project-desc">E‑commerce app with Firebase, order tracking, and optimized launch performance.</p>
-						<div class="project-tags"><span>iOS</span><span>Firebase</span><span>Performance</span></div>
-					</div>
-				</article>
-				<article class="project-card aos" tabindex="0">
-					<div class="project-media">
-						<img src="assets/img/placeholder-dark.svg" data-src="assets/img/logos/driver.svg" alt="Driver app preview" loading="lazy" decoding="async" />
-						<div class="project-overlay" aria-hidden="true"><span>Preview</span></div>
-					</div>
-					<div class="project-content">
-						<div class="project-head">
-							<img class="app-logo" src="assets/img/logos/driver.svg" alt="Driver icon" loading="lazy" decoding="async" />
-							<h3 class="project-title">Driver</h3>
-						</div>
-						<p class="project-desc">Logistics driver app with Core Location and live order tracking.</p>
-						<div class="project-tags"><span>iOS</span><span>Core Location</span><span>Tracking</span></div>
-					</div>
-				</article>
-				<article class="project-card aos" tabindex="0">
-					<div class="project-media">
-						<img src="assets/img/placeholder-dark.svg" data-src="assets/img/logos/icentra.svg" alt="iCentra app preview" loading="lazy" decoding="async" />
-						<div class="project-overlay" aria-hidden="true"><span>Preview</span></div>
-					</div>
-					<div class="project-content">
-						<div class="project-head">
-							<img class="app-logo" src="assets/img/logos/icentra.svg" alt="iCentra icon" loading="lazy" decoding="async" />
-							<h3 class="project-title">iCentra</h3>
-						</div>
-						<p class="project-desc">Business utility app with advanced UI flows and localization.</p>
-						<div class="project-tags"><span>iOS</span><span>Localization</span><span>UX</span></div>
-					</div>
-				</article>
-			</div>
-		</section>
+    <div id="hero-ripples" style="position:absolute;left:50%;top:50%;z-index:0;pointer-events:none;color:var(--scene,#22d3ee);">
+      <span style="position:absolute;left:0;top:0;width:320px;height:320px;border:1.5px solid currentColor;border-radius:50%;transform:translate(-50%,-50%);animation:ripple 4s ease-out infinite;"></span>
+      <span style="position:absolute;left:0;top:0;width:320px;height:320px;border:1.5px solid currentColor;border-radius:50%;transform:translate(-50%,-50%);animation:ripple 4s ease-out infinite;animation-delay:1s;"></span>
+      <span style="position:absolute;left:0;top:0;width:320px;height:320px;border:1.5px solid currentColor;border-radius:50%;transform:translate(-50%,-50%);animation:ripple 4s ease-out infinite;animation-delay:2s;"></span>
+      <span style="position:absolute;left:0;top:0;width:320px;height:320px;border:1.5px solid currentColor;border-radius:50%;transform:translate(-50%,-50%);animation:ripple 4s ease-out infinite;animation-delay:3s;"></span>
+    </div>
 
-		<section id="education" class="section container aos" aria-labelledby="education-title">
-			<h2 id="education-title" class="section-title">Education</h2>
-			<ul class="education-list">
-				<li>
-					<h3 class="item-title">Bachelor of Computer Science — Software Engineering</h3>
-					<p class="item-meta">University of Gujrat, Pakistan • 2015 — 2019 • Attested</p>
-				</li>
-			</ul>
-		</section>
+    <div class="hero-row" style="position:relative;z-index:3;max-width:1200px;margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between;gap:40px;">
+      <div class="hero-copy" style="flex:1;display:flex;flex-direction:column;align-items:flex-start;max-width:560px;">
+        <div id="hero-eyebrow" style="display:inline-flex;align-items:center;gap:9px;padding:7px 15px;border-radius:999px;border:1px solid var(--scene,#22d3ee);background:rgba(34,211,238,0.06);font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1px;color:var(--scene,#22d3ee);margin-bottom:26px;transition:color .5s,border-color .5s;">iOS DEVELOPER · WEB3 ENGINEER</div>
+        <h1 id="hero-headline" class="hero-headline" style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:82px;line-height:0.96;letter-spacing:-2.5px;color:#fff;transition:opacity .45s cubic-bezier(.2,.7,.2,1),transform .45s cubic-bezier(.2,.7,.2,1);">Muhammad<br>Naeem Akram</h1>
+        <p id="hero-sub" style="max-width:440px;margin:26px 0 0;font-size:17px;line-height:1.7;color:#9fb0c0;transition:opacity .45s;">Senior iOS Developer architecting secure, high-performance crypto wallets and fintech apps — Swift, SwiftUI &amp; blockchain security.</p>
+        <div style="display:flex;gap:14px;margin-top:36px;flex-wrap:wrap;">
+          <a href="#work" style="display:flex;align-items:center;gap:9px;padding:15px 26px;border-radius:12px;background:linear-gradient(135deg,#00e5a0,#22d3ee);color:#05070b;font-weight:700;font-size:15px;box-shadow:0 8px 40px rgba(0,229,160,0.28);transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s cubic-bezier(.2,.7,.2,1);position:relative;overflow:hidden;" style-hover="transform:translateY(-4px);box-shadow:0 16px 56px rgba(0,229,160,0.5);">View my work →</a>
+          <a href="assets/Naeem_Akram_Resume.pdf" download style="display:flex;align-items:center;gap:9px;padding:15px 26px;border-radius:12px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.14);color:#e8eef5;font-weight:600;font-size:15px;transition:all .25s cubic-bezier(.2,.7,.2,1);position:relative;overflow:hidden;" style-hover="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.25);transform:translateY(-2px);">↓ Resume</a>
+        </div>
+        <div id="hero-dots" style="display:flex;gap:10px;margin-top:40px;">
+          <button data-hs="0" style="width:52px;height:4px;border:none;border-radius:3px;background:#22d3ee;cursor:pointer;padding:0;transition:all .4s;"></button>
+          <button data-hs="1" style="width:34px;height:4px;border:none;border-radius:3px;background:#2a3a48;cursor:pointer;padding:0;transition:all .4s;"></button>
+          <button data-hs="2" style="width:34px;height:4px;border:none;border-radius:3px;background:#2a3a48;cursor:pointer;padding:0;transition:all .4s;"></button>
+          <button data-hs="3" style="width:34px;height:4px;border:none;border-radius:3px;background:#2a3a48;cursor:pointer;padding:0;transition:all .4s;"></button>
+        </div>
+      </div>
 
-		<section id="languages" class="section container aos" aria-labelledby="languages-title">
-			<h2 id="languages-title" class="section-title">Languages</h2>
-			<ul class="lang-list" role="list">
-				<li class="lang-item"><span class="lang-name">English</span><span class="lang-level">Fluent</span></li>
-				<li class="lang-item"><span class="lang-name">Urdu</span><span class="lang-level">Native</span></li>
-				<li class="lang-item"><span class="lang-name">Arabic</span><span class="lang-level">Beginner</span></li>
-			</ul>
-		</section>
+      <div class="hero-stage-wrap" style="position:relative;width:340px;height:560px;flex-shrink:0;display:flex;align-items:center;justify-content:center;">
+        <div style="position:absolute;width:470px;height:470px;transform:rotateX(62deg);animation:arcspin 9s linear infinite;pointer-events:none;">
+          <div style="position:absolute;inset:0;border-radius:50%;border:2px solid transparent;border-top-color:var(--scene,#22d3ee);border-right-color:var(--scene,#22d3ee);filter:drop-shadow(0 0 9px var(--scene,#22d3ee));opacity:.85;"></div>
+        </div>
+        <div style="position:absolute;width:550px;height:550px;transform:rotateX(58deg);animation:arcspin2 14s linear infinite;pointer-events:none;">
+          <div style="position:absolute;inset:0;border-radius:50%;border:1.5px solid transparent;border-bottom-color:rgba(0,229,160,0.5);filter:drop-shadow(0 0 7px rgba(0,229,160,0.5));"></div>
+        </div>
 
-		<section id="contact" class="section container aos" aria-labelledby="contact-title">
-			<h2 id="contact-title" class="section-title">Contact</h2>
-			<p class="section-text">Want to collaborate or have an opportunity in mind? Let’s talk.</p>
-			<form id="contact-form" class="contact-form" action="#" method="POST" novalidate>
-				<div class="form-grid">
-					<label>
-						<span>Name</span>
-						<input type="text" name="name" placeholder="Your name" required />
-					</label>
-					<label>
-						<span>Email</span>
-						<input type="email" name="email" placeholder="you@example.com" required />
-					</label>
-					<label class="full">
-						<span>Message</span>
-						<textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
-					</label>
-				</div>
-				<button class="btn primary" type="submit">Send</button>
-				<p class="form-status" aria-live="polite" role="status"></p>
-			</form>
-			<div class="socials">
-				<a href="https://www.linkedin.com/in/naeemakee" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-				<a href="https://github.com/naeemAkee" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-				<a href="mailto:naeem.akee@gmail.com" aria-label="Email">Email</a>
-				<a href="tel:+971555249285" aria-label="Phone">+971 55 524 9285</a>
-			</div>
-		</section>
-	</main>
+        <div id="hero-phone-float" style="position:relative;animation:floatY 5s ease-in-out infinite;will-change:transform;">
+          <div id="hero-phone" style="position:relative;width:262px;height:536px;transform-style:preserve-3d;will-change:transform;">
+            <div style="position:absolute;inset:0;border-radius:42px;background:linear-gradient(120deg,#0c1018,#05070b);transform:translateZ(-18px);box-shadow:0 55px 90px rgba(0,0,0,.7);"></div>
+            <div style="position:relative;width:100%;height:100%;border-radius:42px;padding:11px;background:linear-gradient(150deg,#1c2532,#0a0e16);box-shadow:0 0 0 2px rgba(255,255,255,0.06),0 0 64px var(--scene,#22d3ee);">
+              <div style="position:absolute;top:20px;left:50%;transform:translateX(-50%);width:82px;height:22px;background:#05070b;border-radius:12px;z-index:6;"></div>
+              <div id="hero-screen" style="position:relative;width:100%;height:100%;border-radius:32px;overflow:hidden;"><img src="assets/wallet-mockup.png" alt="Wallet App" style="position:relative;width:100%;height:100%;border-radius:32px;overflow:hidden;object-fit:cover;display:block;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<footer class="site-footer">
-		<div class="container">
-			<p>© <span id="year"></span> Naeem Akram. All rights reserved.</p>
-		</div>
-	</footer>
+    <div style="position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px;color:#5a6a78;font-size:11px;font-family:'JetBrains Mono',monospace;letter-spacing:1px;">SCROLL<div style="width:1px;height:32px;background:linear-gradient(var(--scene,#22d3ee),transparent);animation:bob 1.8s ease-in-out infinite;"></div></div>
+  </header>
 
-	<script src="assets/js/script.js"></script>
+  <!-- ===== STATS STRIP ===== -->
+  <div style="position:relative;z-index:2;border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.012);">
+    <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-around;flex-wrap:wrap;gap:20px;padding:30px 40px;">
+      <div style="text-align:center;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px;background:linear-gradient(135deg,#00e5a0,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent;" data-count="7" data-suffix="+">0+</div><div style="font-size:12.5px;color:#7a8a98;margin-top:4px;font-family:'JetBrains Mono',monospace;">Years Exp</div></div>
+      <div style="text-align:center;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px;background:linear-gradient(135deg,#00e5a0,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent;" data-count="20" data-suffix="+">0+</div><div style="font-size:12.5px;color:#7a8a98;margin-top:4px;font-family:'JetBrains Mono',monospace;">Apps Shipped</div></div>
+      <div style="text-align:center;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px;background:linear-gradient(135deg,#00e5a0,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent;" data-count="99.9" data-decimals="1" data-suffix="%">0%</div><div style="font-size:12.5px;color:#7a8a98;margin-top:4px;font-family:'JetBrains Mono',monospace;">Crash-Free</div></div>
+      <div style="text-align:center;"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:40px;background:linear-gradient(135deg,#00e5a0,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent;" data-count="22" data-suffix="+">0+</div><div style="font-size:12.5px;color:#7a8a98;margin-top:4px;font-family:'JetBrains Mono',monospace;">Chains</div></div>
+    </div>
+  </div>
+
+  <!-- ===== MARQUEE ===== -->
+  <div style="position:relative;z-index:2;overflow:hidden;border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);padding:20px 0;background:rgba(255,255,255,0.012);">
+    <div style="display:flex;width:max-content;animation:marq 28s linear infinite;gap:0;">
+      <div style="display:flex;gap:48px;padding-right:48px;font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:600;color:#5a6982;white-space:nowrap;">
+        <span>Swift</span><span style="color:#00e5a0;">✦</span><span>SwiftUI</span><span style="color:#00e5a0;">✦</span><span>UIKit</span><span style="color:#00e5a0;">✦</span><span>React Native</span><span style="color:#00e5a0;">✦</span><span>WalletConnect</span><span style="color:#00e5a0;">✦</span><span>CryptoKit</span><span style="color:#00e5a0;">✦</span><span>Combine</span><span style="color:#00e5a0;">✦</span><span>Web3</span><span style="color:#00e5a0;">✦</span>
+      </div>
+      <div style="display:flex;gap:48px;padding-right:48px;font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:600;color:#5a6982;white-space:nowrap;">
+        <span>Swift</span><span style="color:#00e5a0;">✦</span><span>SwiftUI</span><span style="color:#00e5a0;">✦</span><span>UIKit</span><span style="color:#00e5a0;">✦</span><span>React Native</span><span style="color:#00e5a0;">✦</span><span>WalletConnect</span><span style="color:#00e5a0;">✦</span><span>CryptoKit</span><span style="color:#00e5a0;">✦</span><span>Combine</span><span style="color:#00e5a0;">✦</span><span>Web3</span><span style="color:#00e5a0;">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:140px 40px;">
+    <div data-reveal style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#00e5a0;letter-spacing:2px;margin-bottom:50px;">01 — ABOUT</div>
+    <div class="two-col" style="display:grid;grid-template-columns:1.45fr 1fr;gap:64px;align-items:start;">
+      <div data-reveal>
+        <h2 style="margin:0 0 28px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(30px,4vw,46px);line-height:1.15;letter-spacing:-1px;">Senior iOS architect specializing in <span style="color:#00e5a0;">blockchain security</span>, <span style="color:#22d3ee;">fintech solutions</span>, and <span style="color:#a78bfa;">scalable apps</span>.</h2>
+        <p style="font-size:16.5px;line-height:1.8;color:#9a9aab;margin:0 0 18px;">7+ years architecting secure, high-performance mobile applications across Crypto Wallet, FinTech, Telecom, and marketplace domains. Expert in Swift, SwiftUI, Combine, and async/await with deep hands-on experience in blockchain wallet security (BIP-39, Secure Enclave, Keychain, biometrics) and WalletConnect integration.</p>
+        <p style="font-size:16.5px;line-height:1.8;color:#9a9aab;margin:0;">Proven record of shipping feature-rich apps serving millions of users through clean MVVM and Coordinator architecture, robust testing, and CI/CD automation. Strong collaborator in Agile teams focused on scalable, testable, production-grade code.</p>
+      </div>
+      <div data-reveal style="display:flex;flex-direction:column;gap:14px;">
+        <div id="about-photo" style="position:relative;perspective:1000px;margin-bottom:4px;">
+          <div id="about-photo-inner" style="position:relative;border-radius:20px;padding:3px;background:linear-gradient(135deg,#00e5a0,#22d3ee 55%,rgba(167,139,250,0.4));box-shadow:0 22px 60px rgba(0,229,160,0.18);transition:transform .2s cubic-bezier(.2,.7,.2,1),box-shadow .3s cubic-bezier(.2,.7,.2,1);transform-style:preserve-3d;will-change:transform;" style-hover="box-shadow:0 32px 80px rgba(0,229,160,0.3);">
+            <img src="assets/profile.png" alt="Muhammad Naeem Akram" style="display:block;width:100%;height:300px;object-fit:cover;object-position:center 22%;border-radius:18px;"/>
+            <span style="position:absolute;top:11px;left:11px;width:22px;height:22px;border-top:2px solid #00e5a0;border-left:2px solid #00e5a0;border-radius:4px 0 0 0;opacity:.85;"></span>
+            <span style="position:absolute;bottom:11px;right:11px;width:22px;height:22px;border-bottom:2px solid #22d3ee;border-right:2px solid #22d3ee;border-radius:0 0 4px 0;opacity:.85;"></span>
+            <div style="position:absolute;left:12px;bottom:12px;display:flex;align-items:center;gap:7px;padding:6px 12px;border-radius:999px;background:rgba(7,7,11,0.62);backdrop-filter:blur(8px);border:1px solid rgba(0,229,160,0.28);font-family:'JetBrains Mono',monospace;font-size:11px;color:#00e5a0;">
+              <span style="width:7px;height:7px;border-radius:50%;background:#00e5a0;box-shadow:0 0 8px #00e5a0;animation:pulse 2s infinite;"></span>Dubai, UAE
+            </div>
+          </div>
+        </div>
+        <div style="padding:22px;border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);transition:all .3s cubic-bezier(.2,.7,.2,1);" style-hover="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12);transform:translateY(-2px);"><div style="font-size:12px;color:#7a7a88;font-family:'JetBrains Mono',monospace;margin-bottom:6px;">CURRENTLY</div><div style="font-size:16px;font-weight:600;">iOS Mobile Engineer</div><div style="font-size:14px;color:#00e5a0;">Token 13 L.L.C · Dubai</div></div>
+        <div style="padding:22px;border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);transition:all .3s cubic-bezier(.2,.7,.2,1);" style-hover="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12);transform:translateY(-2px);"><div style="font-size:12px;color:#7a7a88;font-family:'JetBrains Mono',monospace;margin-bottom:6px;">FOCUS</div><div style="font-size:16px;font-weight:600;">Crypto Wallets &amp; Secure iOS</div><div style="font-size:14px;color:#9a9aab;">Multi-chain · DeFi · DEX swaps</div></div>
+        <div style="padding:22px;border-radius:16px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);transition:all .3s cubic-bezier(.2,.7,.2,1);" style-hover="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12);transform:translateY(-2px);"><div style="font-size:12px;color:#7a7a88;font-family:'JetBrains Mono',monospace;margin-bottom:6px;">EDUCATION</div><div style="font-size:16px;font-weight:600;">B.Sc Computer Science</div><div style="font-size:14px;color:#9a9aab;">University of Gujrat, Pakistan · 2015-2019</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:60px 40px 140px;">
+    <div data-reveal style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#00e5a0;letter-spacing:2px;margin-bottom:18px;">02 — SKILLS</div>
+    <h2 data-reveal style="margin:0 0 50px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(28px,4vw,42px);letter-spacing:-1px;">The full toolkit</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;">
+
+      <div data-reveal style="padding:28px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.035),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.07);transition:all .35s cubic-bezier(.2,.7,.2,1);position:relative;overflow:hidden;" style-hover="background:linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02));border-color:rgba(255,255,255,0.12);transform:translateY(-4px);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;"><span style="display:grid;place-items:center;width:40px;height:40px;border-radius:11px;background:rgba(0,229,160,0.12);color:#00e5a0;font-size:20px;transition:all .3s ease;">⌘</span><h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:600;transition:color .3s ease;">Languages</h3></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;">
+          <span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">Swift</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">Objective-C</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">TypeScript</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">JavaScript</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">C++</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">C</span>
+        </div>
+      </div>
+
+      <div data-reveal style="padding:28px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.035),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.07);transition:all .35s cubic-bezier(.2,.7,.2,1);" style-hover="background:linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02));border-color:rgba(255,255,255,0.12);transform:translateY(-4px);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;"><span style="display:grid;place-items:center;width:40px;height:40px;border-radius:11px;background:rgba(34,211,238,0.12);color:#22d3ee;font-size:20px;transition:all .3s ease;">▦</span><h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:600;transition:color .3s ease;">iOS &amp; UI</h3></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;">
+          <span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">SwiftUI</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">UIKit</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">Core Animation</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">Combine</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">Swift Concurrency</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">React Native</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">HIG</span>
+        </div>
+      </div>
+
+      <div data-reveal style="padding:28px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.035),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.07);transition:all .35s cubic-bezier(.2,.7,.2,1);" style-hover="background:linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02));border-color:rgba(255,255,255,0.12);transform:translateY(-4px);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;"><span style="display:grid;place-items:center;width:40px;height:40px;border-radius:11px;background:rgba(167,139,250,0.14);color:#a78bfa;font-size:20px;transition:all .3s ease;">◈</span><h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:600;transition:color .3s ease;">Architecture</h3></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;">
+          <span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">MVVM</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">MVVM-C</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">VIPER</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">Clean Architecture</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">SOLID</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">DI</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">Agile/Scrum</span>
+        </div>
+      </div>
+
+      <div data-reveal style="padding:28px;border-radius:18px;background:linear-gradient(180deg,rgba(0,229,160,0.06),rgba(255,255,255,0.01));border:1px solid rgba(0,229,160,0.18);transition:all .35s cubic-bezier(.2,.7,.2,1);" style-hover="background:linear-gradient(180deg,rgba(0,229,160,0.12),rgba(255,255,255,0.02));border-color:rgba(0,229,160,0.28);transform:translateY(-4px);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;"><span style="display:grid;place-items:center;width:40px;height:40px;border-radius:11px;background:rgba(0,229,160,0.14);color:#00e5a0;font-size:20px;transition:all .3s ease;">⛓</span><h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:600;transition:color .3s ease;">Blockchain &amp; Security</h3></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;">
+          <span style="padding:7px 13px;border-radius:8px;background:rgba(0,229,160,0.06);border:1px solid rgba(0,229,160,0.15);font-size:13px;color:#bdf5e3;font-family:'JetBrains Mono',monospace;">WalletConnect v2</span><span style="padding:7px 13px;border-radius:8px;background:rgba(0,229,160,0.06);border:1px solid rgba(0,229,160,0.15);font-size:13px;color:#bdf5e3;font-family:'JetBrains Mono',monospace;">BIP-39</span><span style="padding:7px 13px;border-radius:8px;background:rgba(0,229,160,0.06);border:1px solid rgba(0,229,160,0.15);font-size:13px;color:#bdf5e3;font-family:'JetBrains Mono',monospace;">Multi-Chain</span><span style="padding:7px 13px;border-radius:8px;background:rgba(0,229,160,0.06);border:1px solid rgba(0,229,160,0.15);font-size:13px;color:#bdf5e3;font-family:'JetBrains Mono',monospace;">CryptoKit</span><span style="padding:7px 13px;border-radius:8px;background:rgba(0,229,160,0.06);border:1px solid rgba(0,229,160,0.15);font-size:13px;color:#bdf5e3;font-family:'JetBrains Mono',monospace;">Secure Enclave</span><span style="padding:7px 13px;border-radius:8px;background:rgba(0,229,160,0.06);border:1px solid rgba(0,229,160,0.15);font-size:13px;color:#bdf5e3;font-family:'JetBrains Mono',monospace;">PBKDF2</span><span style="padding:7px 13px;border-radius:8px;background:rgba(0,229,160,0.06);border:1px solid rgba(0,229,160,0.15);font-size:13px;color:#bdf5e3;font-family:'JetBrains Mono',monospace;">SSL Pinning</span><span style="padding:7px 13px;border-radius:8px;background:rgba(0,229,160,0.06);border:1px solid rgba(0,229,160,0.15);font-size:13px;color:#bdf5e3;font-family:'JetBrains Mono',monospace;">Keychain</span><span style="padding:7px 13px;border-radius:8px;background:rgba(0,229,160,0.06);border:1px solid rgba(0,229,160,0.15);font-size:13px;color:#bdf5e3;font-family:'JetBrains Mono',monospace;">FaceID / TouchID</span>
+        </div>
+      </div>
+
+      <div data-reveal style="padding:28px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.035),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.07);transition:all .35s cubic-bezier(.2,.7,.2,1);" style-hover="background:linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02));border-color:rgba(255,255,255,0.12);transform:translateY(-4px);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;"><span style="display:grid;place-items:center;width:40px;height:40px;border-radius:11px;background:rgba(34,211,238,0.12);color:#22d3ee;font-size:20px;transition:all .3s ease;">⇄</span><h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:600;transition:color .3s ease;">Data &amp; Networking</h3></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;">
+          <span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">Core Data</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">SwiftData</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">Realm</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">SQLite</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">URLSession</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">Alamofire</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">WebSockets</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">MongoDB</span>
+        </div>
+      </div>
+
+      <div data-reveal style="padding:28px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.035),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.07);transition:all .35s cubic-bezier(.2,.7,.2,1);" style-hover="background:linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02));border-color:rgba(255,255,255,0.12);transform:translateY(-4px);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;"><span style="display:grid;place-items:center;width:40px;height:40px;border-radius:11px;background:rgba(245,158,11,0.14);color:#f59e0b;font-size:20px;transition:all .3s ease;">⚙</span><h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:600;transition:color .3s ease;">Tools, CI/CD &amp; Testing</h3></div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;">
+          <span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">Xcode</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">Git</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">Fastlane</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">GitHub Actions</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">Jenkins</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">Firebase</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">TestFlight</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">XCTest</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">TDD</span><span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);font-size:13px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">SPM</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:60px 40px 140px;">
+    <div data-reveal style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#00e5a0;letter-spacing:2px;margin-bottom:18px;">03 — EXPERIENCE</div>
+    <h2 data-reveal style="margin:0 0 56px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(28px,4vw,42px);letter-spacing:-1px;">Career timeline</h2>
+
+    <div style="position:relative;padding-left:34px;">
+      <div id="timeline-track" style="position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:rgba(255,255,255,0.07);"></div>
+      <div id="timeline-fill" style="position:absolute;left:7px;top:6px;width:2px;height:0;background:linear-gradient(#00e5a0,#22d3ee);box-shadow:0 0 14px #00e5a0;border-radius:2px;"></div>
+
+      <div data-reveal style="position:relative;margin-bottom:36px;transition:all .35s cubic-bezier(.2,.7,.2,1);" style-hover="transform:translateX(8px);">
+        <span style="position:absolute;left:-34px;top:6px;width:16px;height:16px;border-radius:50%;background:#00e5a0;box-shadow:0 0 0 5px rgba(0,229,160,0.15),0 0 22px rgba(0,229,160,0.6);transition:all .3s ease;" style-hover="box-shadow:0 0 0 8px rgba(0,229,160,0.25),0 0 32px rgba(0,229,160,0.8);"></span>
+        <div style="padding:26px 28px;border-radius:18px;background:linear-gradient(180deg,rgba(0,229,160,0.06),rgba(255,255,255,0.012));border:1px solid rgba(0,229,160,0.18);transition:all .35s cubic-bezier(.2,.7,.2,1);" style-hover="background:linear-gradient(180deg,rgba(0,229,160,0.12),rgba(255,255,255,0.025));border-color:rgba(0,229,160,0.28);box-shadow:0 12px 40px rgba(0,229,160,0.15);">
+          <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;align-items:baseline;margin-bottom:6px;"><h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:600;transition:color .3s ease;">Senior iOS Developer</h3><span style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#00e5a0;padding:4px 10px;border-radius:6px;background:rgba(0,229,160,0.1);transition:all .3s ease;">Apr 2025 — Present</span></div>
+          <div style="font-size:15px;color:#22d3ee;font-weight:600;margin-bottom:16px;">Token 13 Software L.L.C · Dubai, UAE</div>
+          <ul style="margin:0;padding-left:18px;color:#9a9aab;font-size:14.5px;line-height:1.75;">
+            <li>Architected TokenB Explorer, a self-custody crypto wallet in SwiftUI spanning 8 blockchain networks with BIP-39 seed-phrase generation and on-device transaction signing via custom Rust SDK.</li>
+            <li>Hardened key security using Secure Enclave key wrapping, PBKDF2, and biometric-protected Keychain (Face ID/Touch ID) with SSL pinning.</li>
+            <li>Integrated WalletConnect v2 (Reown) and built an in-app Web3 DApp browser with live market data over Combine and async/await data layer.</li>
+            <li>Established the app's MVVM + Coordinator architecture and CI/CD pipeline with Fastlane and GitHub Actions.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div data-reveal style="position:relative;margin-bottom:36px;transition:all .35s cubic-bezier(.2,.7,.2,1);" style-hover="transform:translateX(8px);">
+        <span style="position:absolute;left:-34px;top:6px;width:16px;height:16px;border-radius:50%;background:#22d3ee;box-shadow:0 0 0 5px rgba(34,211,238,0.12);transition:all .3s ease;" style-hover="box-shadow:0 0 0 8px rgba(34,211,238,0.25),0 0 32px rgba(34,211,238,0.6);"></span>
+        <div style="padding:26px 28px;border-radius:18px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);transition:all .35s cubic-bezier(.2,.7,.2,1);" style-hover="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12);box-shadow:0 12px 40px rgba(34,211,238,0.1);">
+          <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;align-items:baseline;margin-bottom:6px;"><h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:600;">Senior iOS Developer</h3><span style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#9a9aab;padding:4px 10px;border-radius:6px;background:rgba(255,255,255,0.05);">Sep 2023 — Apr 2025</span></div>
+          <div style="font-size:15px;color:#22d3ee;font-weight:600;margin-bottom:16px;">DulSoft Limited · Remote</div>
+          <ul style="margin:0;padding-left:18px;color:#9a9aab;font-size:14.5px;line-height:1.75;">
+            <li>Developed secure, responsive interfaces for MEO Arena and Photo iD apps using SwiftUI and UIKit.</li>
+            <li>Implemented biometric login, offline caching with Core Data, and robust REST API integration with comprehensive unit testing.</li>
+            <li>Reduced app crash rate by 30% through improved memory management and enhanced test coverage across feature modules.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div data-reveal style="position:relative;margin-bottom:36px;transition:all .35s cubic-bezier(.2,.7,.2,1);" style-hover="transform:translateX(8px);">
+        <span style="position:absolute;left:-34px;top:6px;width:16px;height:16px;border-radius:50%;background:#a78bfa;box-shadow:0 0 0 5px rgba(167,139,250,0.12);transition:all .3s ease;" style-hover="box-shadow:0 0 0 8px rgba(167,139,250,0.25),0 0 32px rgba(167,139,250,0.6);"></span>
+        <div style="padding:26px 28px;border-radius:18px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);transition:all .35s cubic-bezier(.2,.7,.2,1);" style-hover="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12);box-shadow:0 12px 40px rgba(167,139,250,0.1);">
+          <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;align-items:baseline;margin-bottom:6px;"><h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:600;">Senior iOS Developer</h3><span style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#9a9aab;padding:4px 10px;border-radius:6px;background:rgba(255,255,255,0.05);">Oct 2021 — Sep 2023</span></div>
+          <div style="font-size:15px;color:#22d3ee;font-weight:600;margin-bottom:16px;">Evamp & Saanga · Pakistan</div>
+          <ul style="margin:0;padding-left:18px;color:#9a9aab;font-size:14.5px;line-height:1.75;">
+            <li>Rebuilt Jazz World (SIMOSA) app UI, improving user retention by 15% across 10M+ users with enhanced UX flows.</li>
+            <li>Integrated 90+ RESTful APIs, deep links, and analytics events for complex telecom operations.</li>
+            <li>Delivered Bakcell and Nar+ carrier apps, serving 5M+ and 4M+ users respectively with mission-critical features.</li>
+            <li>Led CI/CD pipelines with Jenkins and managed GitLab release workflows for production deployments.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div data-reveal style="position:relative;transition:all .35s cubic-bezier(.2,.7,.2,1);" style-hover="transform:translateX(8px);">
+        <span style="position:absolute;left:-34px;top:6px;width:16px;height:16px;border-radius:50%;background:#f59e0b;box-shadow:0 0 0 5px rgba(245,158,11,0.15);transition:all .3s ease;" style-hover="box-shadow:0 0 0 8px rgba(245,158,11,0.25),0 0 32px rgba(245,158,11,0.6);"></span>
+        <div style="padding:26px 28px;border-radius:18px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);transition:all .35s cubic-bezier(.2,.7,.2,1);" style-hover="background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.12);box-shadow:0 12px 40px rgba(245,158,11,0.1);">
+          <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;align-items:baseline;margin-bottom:6px;"><h3 style="margin:0;font-family:'Space Grotesk',sans-serif;font-size:21px;font-weight:600;">iOS Developer</h3><span style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#9a9aab;padding:4px 10px;border-radius:6px;background:rgba(255,255,255,0.05);">May 2019 — Oct 2021</span></div>
+          <div style="font-size:15px;color:#22d3ee;font-weight:600;margin-bottom:16px;">Xenex Media · Australia</div>
+          <ul style="margin:0;padding-left:18px;color:#9a9aab;font-size:14.5px;line-height:1.75;">
+            <li>Built FreshFeelz, GoCycle, and iCentra apps from scratch with advanced UI/UX flows and responsive interfaces.</li>
+            <li>GoCycle: Integrated real-time GPS tracking and HealthKit; reduced load time 40% and increased engagement 25%.</li>
+            <li>FreshFeelz: Built real-time booking platform with Stripe payments and loyalty rewards; improved conversions 35%.</li>
+            <li>Created reusable modules, implemented in-app payment systems, and localization across multiple markets.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS / WORK ===== -->
+  <section id="work" style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:60px 40px 140px;">
+    <div data-reveal style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#00e5a0;letter-spacing:2px;margin-bottom:18px;">04 — SELECTED WORK</div>
+    <h2 data-reveal style="margin:0 0 14px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(28px,4vw,42px);letter-spacing:-1px;">Apps I've shipped</h2>
+    <p data-reveal style="margin:0 0 38px;color:#9a9aab;font-size:16px;max-width:560px;">Tap a project to preview it. Each one was built end-to-end with a focus on performance and security.</p>
+
+    <div data-reveal style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:44px;">
+      <button id="chip-0">TokenB Explorer</button>
+      <button id="chip-1">Jazz World</button>
+      <button id="chip-2">GoCycle</button>
+      <button id="chip-3">FreshFeelz</button>
+      <button id="chip-4">Photo iD</button>
+    </div>
+
+    <div class="showcase-grid" id="showcase" style="display:grid;grid-template-columns:1fr 360px;gap:60px;align-items:center;">
+
+      <!-- detail -->
+      <div>
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px;">
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:60px;line-height:1;color:rgba(255,255,255,0.07);">{{ active.num }}</span>
+          <div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--app);letter-spacing:1px;">{{ active.category }}</div>
+            <h3 style="margin:2px 0 0;font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:700;letter-spacing:-1px;">{{ active.name }}</h3>
+          </div>
+        </div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#7a7a88;margin-bottom:22px;">{{ active.period }}</div>
+        <ul style="margin:0 0 26px;padding-left:18px;color:#b4b4c0;font-size:15.5px;line-height:1.8;">
+          <sc-for list="{{ active.desc }}" as="d" hint-placeholder-count="3">
+            <li>{{ d }}</li>
+          </sc-for>
+        </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px;">
+          <sc-for list="{{ active.tech }}" as="t" hint-placeholder-count="4">
+            <span style="padding:7px 13px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);font-size:12.5px;color:#c4c4d0;font-family:'JetBrains Mono',monospace;">{{ t }}</span>
+          </sc-for>
+        </div>
+        <a href="{{ active.link }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:600;color:#00e5a0;font-family:'JetBrains Mono',monospace;transition:gap .2s;" style-hover="gap:14px;">{{ active.linkText }}</a>
+      </div>
+
+      <!-- phone -->
+      <div id="phone-wrap" style="perspective:1400px;display:flex;justify-content:center;">
+        <div id="phone" style="{{ phoneStyle }}">
+          <div style="position:relative;width:300px;height:620px;border-radius:46px;padding:13px;background:linear-gradient(160deg,#1a1a24,#0c0c12);box-shadow:0 40px 90px rgba(0,0,0,0.6),0 0 0 2px rgba(255,255,255,0.05),0 0 60px var(--app);transition:box-shadow .4s;">
+            <div style="position:absolute;top:24px;left:50%;transform:translateX(-50%);width:96px;height:26px;background:#07070b;border-radius:14px;z-index:5;"></div>
+            <div style="position:relative;width:100%;height:100%;border-radius:34px;overflow:hidden;background:radial-gradient(120% 80% at 50% 0%, color-mix(in srgb, var(--app) 22%, #0c0c12), #0a0a10 60%);display:flex;flex-direction:column;">
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 22px 8px;font-size:12px;font-family:'JetBrains Mono',monospace;color:#cfd0da;font-weight:600;"><span>9:41</span><span style="letter-spacing:1px;">●●● ▮</span></div>
+              <div style="padding:14px 22px 0;display:flex;align-items:center;gap:12px;">
+                <span style="display:grid;place-items:center;width:46px;height:46px;border-radius:13px;background:var(--appicon);color:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.45);font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;box-shadow:0 8px 24px var(--app);">{{ active.initial }}</span>
+                <div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;color:#fff;">{{ active.name }}</div><div style="font-size:11px;color:#8a8a99;font-family:'JetBrains Mono',monospace;">{{ active.category }}</div></div>
+              </div>
+              <div style="margin:18px 18px 0;border-radius:20px;padding:22px 18px;background:linear-gradient(140deg,var(--app),color-mix(in srgb, var(--app) 30%, #07070b));position:relative;overflow:hidden;">
+                <span style="position:absolute;right:-14px;bottom:-26px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:120px;color:rgba(7,7,11,0.12);line-height:1;">{{ active.initial }}</span>
+                <div style="position:relative;font-size:11px;font-family:'JetBrains Mono',monospace;color:rgba(7,7,11,0.7);font-weight:600;margin-bottom:6px;">FEATURED</div>
+                <div style="position:relative;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;color:#07070b;line-height:1.2;">{{ active.tagline }}</div>
+              </div>
+              <div style="padding:18px;display:flex;flex-direction:column;gap:10px;flex:1;">
+                <sc-for list="{{ active.features }}" as="f" hint-placeholder-count="4">
+                  <div style="display:flex;align-items:center;gap:12px;padding:11px 13px;border-radius:13px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);">
+                    <span style="display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:color-mix(in srgb, var(--app) 22%, transparent);color:var(--app);font-size:14px;font-weight:700;">›</span>
+                    <span style="font-size:13px;color:#dcdce4;font-weight:500;flex:1;">{{ f }}</span>
+                    <span style="width:8px;height:8px;border-radius:50%;background:var(--app);"></span>
+                  </div>
+                </sc-for>
+              </div>
+              <div style="display:flex;justify-content:space-around;align-items:center;padding:14px 22px 22px;border-top:1px solid rgba(255,255,255,0.05);">
+                <span style="width:24px;height:5px;border-radius:3px;background:var(--app);"></span>
+                <span style="width:5px;height:5px;border-radius:50%;background:#4a4a58;"></span>
+                <span style="width:5px;height:5px;border-radius:50%;background:#4a4a58;"></span>
+                <span style="width:5px;height:5px;border-radius:50%;background:#4a4a58;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:60px 40px 120px;">
+    <div data-reveal style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#00e5a0;letter-spacing:2px;margin-bottom:18px;">05 — EDUCATION</div>
+    <h2 data-reveal style="margin:0 0 50px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(28px,4vw,42px);letter-spacing:-1px;">Academic background</h2>
+    <div style="display:grid;grid-template-columns:1fr;gap:20px;">
+      <div data-reveal style="padding:32px;border-radius:20px;background:linear-gradient(180deg,rgba(255,255,255,0.035),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.07);transition:all .35s cubic-bezier(.2,.7,.2,1);" style-hover="background:linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02));border-color:rgba(255,255,255,0.12);transform:translateY(-4px);">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#00e5a0;margin-bottom:14px;transition:color .3s ease;">2015 — 2019</div>
+        <h3 style="margin:0 0 8px;font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:600;transition:color .3s ease;white-space:nowrap;">Bachelor of Computer Science – Software Engineering</h3>
+        <div style="color:#9a9aab;font-size:14.5px;line-height:1.6;">University of Gujrat, Pakistan · Attested</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" style="position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:60px 40px 130px;">
+    <div data-reveal style="position:relative;border-radius:30px;overflow:hidden;padding:clamp(40px,6vw,80px);background:linear-gradient(150deg,rgba(0,229,160,0.1),rgba(34,211,238,0.05),rgba(255,255,255,0.012));border:1px solid rgba(0,229,160,0.18);text-align:center;transition:all .4s cubic-bezier(.2,.7,.2,1);" style-hover="background:linear-gradient(150deg,rgba(0,229,160,0.15),rgba(34,211,238,0.1),rgba(255,255,255,0.02));border-color:rgba(0,229,160,0.28);box-shadow:0 20px 60px rgba(0,229,160,0.2);">
+      <div style="position:absolute;inset:0;background:radial-gradient(600px 300px at 50% -20%, rgba(0,229,160,0.18), transparent 70%);pointer-events:none;"></div>
+      <div style="position:relative;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#00e5a0;letter-spacing:2px;margin-bottom:18px;">06 — CONTACT</div>
+        <h2 style="margin:0 0 16px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(34px,5vw,58px);letter-spacing:-2px;line-height:1.05;">Let's build something<br><span style="background:linear-gradient(100deg,#00e5a0,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent;">exceptional</span> together.</h2>
+        <p style="margin:0 auto 36px;max-width:480px;color:#9a9aab;font-size:16px;">Open to iOS &amp; Web3 engineering roles. Drop me a line — I usually reply within a day.</p>
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:40px;">
+          <a href="mailto:naeem.akee@gmail.com" style="display:flex;align-items:center;gap:9px;padding:15px 26px;border-radius:12px;background:linear-gradient(135deg,#00e5a0,#22d3ee);color:#07070b;font-weight:700;font-size:15px;box-shadow:0 8px 36px rgba(0,229,160,0.3);transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s cubic-bezier(.2,.7,.2,1);position:relative;overflow:hidden;" style-hover="transform:translateY(-4px);box-shadow:0 14px 50px rgba(0,229,160,0.45);">✉ Email me</a>
+          <a href="assets/Naeem_Akram_Resume.pdf" download style="display:flex;align-items:center;gap:9px;padding:15px 26px;border-radius:12px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.14);color:#e8e8ee;font-weight:600;font-size:15px;transition:all .25s cubic-bezier(.2,.7,.2,1);position:relative;overflow:hidden;" style-hover="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.25);transform:translateY(-2px);">↓ Download CV</a>
+        </div>
+        <div style="display:flex;gap:clamp(20px,4vw,48px);justify-content:center;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:13.5px;">
+          <a href="mailto:naeem.akee@gmail.com" style="color:#9a9aab;transition:color .2s;" style-hover="color:#00e5a0;">naeem.akee@gmail.com</a>
+          <a href="tel:+971555249285" style="color:#9a9aab;transition:color .2s;" style-hover="color:#00e5a0;">+971 55 524 9285</a>
+          <a href="https://linkedin.com/in/naeemakee" target="_blank" rel="noopener" style="color:#9a9aab;transition:color .2s;" style-hover="color:#00e5a0;">LinkedIn ↗</a>
+          <a href="https://github.com/naeemakee" target="_blank" rel="noopener" style="color:#9a9aab;transition:color .2s;" style-hover="color:#00e5a0;">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-top:50px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.06);font-size:13px;color:#5a5a68;font-family:'JetBrains Mono',monospace;">
+      <span>© 2026 Muhammad Naeem Akram</span>
+      <span>Designed &amp; built with precision · Dubai, UAE</span>
+    </div>
+  </section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { active: 0 };
+
+  data() {
+    return [
+      { name: "TokenB Explorer", num: "01", category: "Crypto Wallet · DeFi", color: "#00e5a0", initial: "TB", iconBg: "linear-gradient(145deg,#00e5a0,#34d399)",
+        period: "Apr 2025 — Present  ·  SwiftUI, Swift, Rust",
+        tagline: "Self-custody crypto wallet",
+        link: "https://github.com/naeemakee",
+        linkText: "View GitHub →",
+        tech: ["SwiftUI", "Secure Enclave", "BIP-39", "WalletConnect v2", "Multi-Chain"],
+        features: ["8 blockchain networks", "BIP-39 seed phrases", "Biometric security", "Web3 DApp browser"],
+        desc: [
+          "Architected self-custody wallet in SwiftUI spanning 8 networks (Ethereum, Solana, Bitcoin, Tron) with BIP-39 seed generation.",
+          "Hardened key security using Secure Enclave wrapping, PBKDF2, and biometric-protected Keychain with SSL pinning.",
+          "Integrated WalletConnect v2 (Reown) and built in-app Web3 DApp browser with live market data via Combine + async/await."
+        ] },
+      { name: "Jazz World (SIMOSA)", num: "02", category: "Telecom · Super-App", color: "#22d3ee", initial: "JW", iconBg: "linear-gradient(145deg,#22d3ee,#67e8f9)",
+        period: "Oct 2021 — Sep 2023  ·  Swift, UIKit",
+        tagline: "Telecom super-app for 10M+ users",
+        link: "https://github.com/naeemakee",
+        linkText: "View GitHub →",
+        tech: ["Swift", "UIKit", "REST APIs", "Deep Linking", "Analytics"],
+        features: ["90+ API integrations", "Balance & bundles", "Bill payments", "Credit transfers"],
+        desc: [
+          "Rebuilt Jazz World app UI, improving user retention by 15% across 10M+ users with enhanced flows.",
+          "Integrated 90+ RESTful APIs for balance checks, bundle management, bill payments, and credit transfers.",
+          "Implemented deep linking and push notifications for seamless user engagement and retention growth."
+        ] },
+      { name: "GoCycle", num: "03", category: "Health & Fitness", color: "#34d399", initial: "GC", iconBg: "linear-gradient(145deg,#6ee7b7,#34d399)",
+        period: "May 2019 — Oct 2021  ·  Swift, UIKit",
+        tagline: "Real-time cycling tracking",
+        link: "https://github.com/naeemakee",
+        linkText: "View GitHub →",
+        tech: ["Swift", "HealthKit", "CoreLocation", "Maps", "Analytics"],
+        features: ["Real-time GPS tracking", "HealthKit integration", "Engagement metrics", "Performance optimized"],
+        desc: [
+          "Built real-time GPS tracking app integrated with HealthKit for cycling enthusiasts.",
+          "Optimized performance by reducing app load time by 40% through efficient data management.",
+          "Increased user engagement by 25% with better UI/UX and real-time tracking visualization."
+        ] },
+      { name: "FreshFeelz", num: "04", category: "Wellness & Booking", color: "#f59e0b", initial: "FF", iconBg: "linear-gradient(145deg,#fbbf24,#f59e0b)",
+        period: "May 2019 — Oct 2021  ·  Swift, UIKit",
+        tagline: "Real-time wellness booking",
+        link: "https://github.com/naeemakee",
+        linkText: "View GitHub →",
+        tech: ["Swift", "Stripe", "Firebase", "Real-time", "Loyalty"],
+        features: ["Real-time booking", "Stripe payments", "Loyalty rewards", "Push notifications"],
+        desc: [
+          "Built real-time wellness marketplace app with secure Stripe payment integration.",
+          "Implemented loyalty rewards system and push notifications for user engagement.",
+          "Improved conversion rates by 35% through optimized UX and seamless booking flows."
+        ] },
+      { name: "Photo iD", num: "05", category: "Field Documentation", color: "#a78bfa", initial: "PI", iconBg: "linear-gradient(145deg,#c4b5fd,#a78bfa)",
+        period: "Sep 2023 — Apr 2025  ·  Swift, SwiftUI",
+        tagline: "Field documentation platform",
+        link: "https://github.com/naeemakee",
+        linkText: "View GitHub →",
+        tech: ["Swift", "Firebase", "Core Data", "Voice-to-text", "PDF Export"],
+        features: ["Real-time photo capture", "Jobsite documentation", "Voice labeling", "PDF export"],
+        desc: [
+          "Built real-time photo capture and field documentation app for contractors and inspectors.",
+          "Integrated voice-to-text labeling, timestamping, and instant PDF export for instant reports.",
+          "Used Firebase and Core Data for offline sync, reducing documentation time by 40%."
+        ] }
+    ];
+  }
+
+  renderVals() {
+    const data = this.data();
+    const active = this.state.active;
+    const idle = { padding: "10px 17px", borderRadius: "999px", border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.02)", color: "#9a9aab", fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", fontWeight: 500, cursor: "pointer", transition: "all .3s cubic-bezier(.2,.7,.2,1)", whiteSpace: "nowrap" };
+    const act = data[active];
+    return {
+      active: act,
+      phoneStyle: { "--app": act.color, "--appicon": act.iconBg }
+    };
+  }
+
+  select(i) {
+    this.paintChips(i);
+    this.setState({ active: i });
+  }
+
+  paintChips(activeArg) {
+    const colors = this.data().map((p) => p.color);
+    const active = (activeArg == null) ? this.state.active : activeArg;
+    for (let i = 0; i < colors.length; i++) {
+      const el = document.getElementById("chip-" + i);
+      if (!el) continue;
+      // base style (chips have no style attr in template, so React never touches them)
+      el.style.cssText = "padding:10px 17px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-size:13px;cursor:pointer;white-space:nowrap;transition:all .3s cubic-bezier(.2,.7,.2,1);";
+      if (i === active) {
+        el.style.background = colors[i];
+        el.style.color = "#07070b";
+        el.style.border = "1px solid " + colors[i];
+        el.style.fontWeight = "700";
+        el.style.boxShadow = "0 0 26px " + colors[i] + "66";
+      } else {
+        el.style.background = "rgba(255,255,255,0.02)";
+        el.style.color = "#9a9aab";
+        el.style.border = "1px solid rgba(255,255,255,0.1)";
+        el.style.fontWeight = "500";
+        el.style.boxShadow = "none";
+      }
+    }
+  }
+
+  initBg3d() {
+    if (this._bg3dInit) return;
+    this._bg3dInit = true;
+    const scene = document.getElementById("bg3d-scene");
+    if (!scene) return;
+    let mx = 0, my = 0, cx = 0, cy = 0;
+    this._bg3dMouse = (e) => { mx = e.clientX / window.innerWidth - 0.5; my = e.clientY / window.innerHeight - 0.5; };
+    window.addEventListener("mousemove", this._bg3dMouse, { passive: true });
+    const loop = () => {
+      cx += (mx - cx) * 0.05;
+      cy += (my - cy) * 0.05;
+      const pos = Math.max(window.scrollY || 0, -document.documentElement.getBoundingClientRect().top, 0);
+      const ty = -pos * 0.06;
+      scene.style.transform = "translateY(" + ty.toFixed(1) + "px) rotateX(" + (-cy * 8 - pos * 0.008).toFixed(2) + "deg) rotateY(" + (cx * 11).toFixed(2) + "deg)";
+      this._bg3dRaf = requestAnimationFrame(loop);
+    };
+    loop();
+  }
+
+  componentDidMount() {
+    this.initBg3d();
+    this.initHero();
+    this.paintChips(0);
+    // about photo 3D tilt
+    const ap = document.getElementById("about-photo");
+    const api = document.getElementById("about-photo-inner");
+    if (ap && api) {
+      ap.addEventListener("mousemove", (e) => {
+        const r = ap.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width - 0.5;
+        const py = (e.clientY - r.top) / r.height - 0.5;
+        api.style.transform = "rotateY(" + (px * 12).toFixed(2) + "deg) rotateX(" + (-py * 12).toFixed(2) + "deg) translateZ(12px)";
+      });
+      ap.addEventListener("mouseleave", () => { api.style.transform = "none"; });
+    }
+    for (let i = 0; i < 6; i++) {
+      const el = document.getElementById("chip-" + i);
+      if (el) el.addEventListener("click", () => this.select(i));
+    }
+    // ---- cursor glow ----
+    if (window.matchMedia && window.matchMedia("(pointer:fine)").matches) {
+      const glow = document.createElement("div");
+      glow.style.cssText = "position:fixed;top:0;left:0;width:340px;height:340px;border-radius:50%;pointer-events:none;z-index:9;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(0,229,160,0.13),rgba(34,211,238,0.05) 40%,transparent 68%);mix-blend-mode:screen;transition:opacity .3s;opacity:0;left:-999px;";
+      document.body.appendChild(glow);
+      this._glow = glow;
+      let tx = 0, ty = 0, cx = 0, cy = 0, shown = false;
+      this._onMove = (e) => { tx = e.clientX; ty = e.clientY; if (!shown) { shown = true; glow.style.opacity = "1"; } };
+      window.addEventListener("mousemove", this._onMove);
+      const tick = () => { cx += (tx - cx) * 0.12; cy += (ty - cy) * 0.12; glow.style.left = cx + "px"; glow.style.top = cy + "px"; this._cur = requestAnimationFrame(tick); };
+      tick();
+    }
+
+    // ---- hero particle network ----
+    const cv = document.getElementById("hero-canvas");
+    if (cv) {
+      const ctx = cv.getContext("2d");
+      let W, H, nodes = [], mouse = { x: -9999, y: -9999 };
+      const DPR = Math.min(window.devicePixelRatio || 1, 2);
+      const resize = () => {
+        const r = cv.getBoundingClientRect();
+        W = r.width; H = r.height;
+        cv.width = W * DPR; cv.height = H * DPR;
+        ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+        const count = Math.min(78, Math.floor(W * H / 14000));
+        nodes = [];
+        for (let i = 0; i < count; i++) nodes.push({ x: Math.random() * W, y: Math.random() * H, vx: (Math.random() - 0.5) * 0.35, vy: (Math.random() - 0.5) * 0.35 });
+      };
+      resize();
+      this._resize = resize;
+      window.addEventListener("resize", resize);
+      this._heroMove = (e) => { const r = cv.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; };
+      cv.parentElement.addEventListener("mousemove", this._heroMove);
+      cv.parentElement.addEventListener("mouseleave", () => { mouse.x = -9999; mouse.y = -9999; });
+      const draw = () => {
+        ctx.clearRect(0, 0, W, H);
+        for (const n of nodes) {
+          n.x += n.vx; n.y += n.vy;
+          if (n.x < 0 || n.x > W) n.vx *= -1;
+          if (n.y < 0 || n.y > H) n.vy *= -1;
+          const dm = Math.hypot(n.x - mouse.x, n.y - mouse.y);
+          if (dm < 130) { n.x += (n.x - mouse.x) / dm * 0.7; n.y += (n.y - mouse.y) / dm * 0.7; }
+        }
+        for (let i = 0; i < nodes.length; i++) {
+          for (let j = i + 1; j < nodes.length; j++) {
+            const a = nodes[i], b = nodes[j];
+            const d = Math.hypot(a.x - b.x, a.y - b.y);
+            if (d < 128) {
+              ctx.strokeStyle = "rgba(0,229,160," + (1 - d / 128) * 0.22 + ")";
+              ctx.lineWidth = 1;
+              ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+            }
+          }
+        }
+        for (const n of nodes) {
+          const dm = Math.hypot(n.x - mouse.x, n.y - mouse.y);
+          const near = dm < 130;
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, near ? 2.6 : 1.6, 0, Math.PI * 2);
+          ctx.fillStyle = near ? "rgba(34,211,238,0.95)" : "rgba(0,229,160,0.55)";
+          ctx.fill();
+        }
+        this._raf = requestAnimationFrame(draw);
+      };
+      draw();
+    }
+
+    // ---- scroll reveal (directional + blur + stagger) ----
+    const dirFor = (el) => {
+      if (el.closest("#skills") || el.closest("#education")) return "scale";
+      if (el.closest("#about") && el.parentElement && el.parentElement.className.indexOf("two-col") !== -1) {
+        const sibs = [...el.parentElement.children].filter((c) => c.hasAttribute("data-reveal"));
+        return sibs.indexOf(el) === 0 ? "left" : "right";
+      }
+      return "up";
+    };
+    const hideFor = (dir) => {
+      if (dir === "left") return "perspective(1100px) translateX(-70px) rotateY(24deg)";
+      if (dir === "right") return "perspective(1100px) translateX(70px) rotateY(-24deg)";
+      if (dir === "scale") return "perspective(950px) rotateX(28deg) scale(.92)";
+      return "perspective(1100px) rotateX(36deg) translateY(60px)";
+    };
+    const els = document.querySelectorAll("[data-reveal]");
+    els.forEach((el) => {
+      const dir = dirFor(el);
+      el.setAttribute("data-rdir", dir);
+      el.style.opacity = "0";
+      el.style.transform = hideFor(dir);
+      el.style.transformOrigin = (dir === "up" || dir === "scale") ? "center bottom" : "center center";
+      el.style.filter = "blur(8px)";
+      el.style.transition = "opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1), filter .9s ease";
+      el.style.willChange = "opacity, transform, filter";
+    });
+    const stagger = (el) => {
+      const sibs = el.parentElement ? [...el.parentElement.children].filter((c) => c.hasAttribute("data-reveal")) : [el];
+      return Math.max(0, sibs.indexOf(el)) * 100;
+    };
+    const revealEl = (el) => { setTimeout(() => { el.style.opacity = "1"; el.style.transform = "none"; el.style.filter = "none"; }, stagger(el)); };
+
+    // ---- count-up stats ----
+    const animateCount = (el) => {
+      const target = parseFloat(el.getAttribute("data-count"));
+      const dec = parseInt(el.getAttribute("data-decimals") || "0", 10);
+      const suffix = el.getAttribute("data-suffix") || "";
+      const dur = 1700, t0 = performance.now();
+      const step = (now) => {
+        const p = Math.min(1, (now - t0) / dur);
+        const e = 1 - Math.pow(1 - p, 3);
+        el.textContent = (target * e).toFixed(dec) + suffix;
+        if (p < 1) requestAnimationFrame(step);
+        else el.textContent = target.toFixed(dec) + suffix;
+      };
+      requestAnimationFrame(step);
+    };
+    const counters = document.querySelectorAll("[data-count]");
+
+    // ---- holographic 3D tilt + glare across all major cards ----
+    this.init3DCards();
+
+    // ---- unified scroll-driven loop (rAF + getBoundingClientRect; robust to any scroller) ----
+    const bar = document.getElementById("scroll-bar");
+    const grid = document.getElementById("grid-bg");
+    const fill = document.getElementById("timeline-fill");
+    const track = document.getElementById("timeline-track");
+    const pending = new Set(els);
+    const pendingCounters = new Set(counters);
+    let scrolled = false;
+    // Primary trigger: native IntersectionObserver (fires correctly under host-driven scroll)
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+          if (en.isIntersecting && pending.has(en.target)) { revealEl(en.target); pending.delete(en.target); io.unobserve(en.target); }
+        });
+      }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+      els.forEach((el) => io.observe(el));
+      const cio = new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+          if (en.isIntersecting && pendingCounters.has(en.target)) { animateCount(en.target); pendingCounters.delete(en.target); cio.unobserve(en.target); }
+        });
+      }, { threshold: 0.5 });
+      counters.forEach((el) => cio.observe(el));
+      this._io = io; this._cio = cio;
+    }
+    const fxLoop = () => {
+      const vh = window.innerHeight;
+      const docTop = document.documentElement.getBoundingClientRect().top;
+      const pos = Math.max(window.scrollY || 0, document.scrollingElement ? document.scrollingElement.scrollTop : 0, -docTop, 0);
+      if (pos > 2) scrolled = true;
+      const max = document.documentElement.scrollHeight - vh;
+      if (bar) bar.style.width = (max > 0 ? Math.min(100, (pos / max) * 100) : 0) + "%";
+      if (grid) grid.style.backgroundPosition = "0px " + (pos * 0.18) + "px, " + (pos * 0.18) + "px 0px";
+      if (fill && track) {
+        const r = track.getBoundingClientRect();
+        const prog = Math.max(0, Math.min(1, (vh * 0.55 - r.top) / r.height));
+        fill.style.height = (prog * track.clientHeight) + "px";
+      }
+      pending.forEach((el) => { if (el.getBoundingClientRect().top < vh * 0.9) { revealEl(el); pending.delete(el); } });
+      pendingCounters.forEach((el) => { if (el.getBoundingClientRect().top < vh * 0.85) { animateCount(el); pendingCounters.delete(el); } });
+      // scroll-driven 3D rotation of the project phone (+ mouse offset)
+      const ph = document.getElementById("phone");
+      const wk = document.getElementById("work");
+      if (ph && wk) {
+        const wr = wk.getBoundingClientRect();
+        const prog = Math.max(0, Math.min(1, (vh - wr.top) / (vh + wr.height)));
+        const baseY = (prog - 0.5) * 48;
+        ph.style.transformStyle = "preserve-3d";
+        ph.style.transform = "rotateY(" + (baseY + (this._phMx || 0) * 16).toFixed(2) + "deg) rotateX(" + (-(this._phMy || 0) * 14).toFixed(2) + "deg)";
+      }
+      this._fx = requestAnimationFrame(fxLoop);
+    };
+    fxLoop();
+    // safety net: if the iframe can't scroll internally, reveal everything so nothing stays hidden
+    this._safety = setTimeout(() => {
+      if (!scrolled) {
+        pending.forEach((el) => { el.style.opacity = "1"; el.style.transform = "none"; el.style.filter = "none"; });
+        pending.clear();
+        pendingCounters.forEach(animateCount); pendingCounters.clear();
+      }
+    }, 4000);
+
+    // ---- phone 3D tilt ----
+    const sc = document.getElementById("showcase");
+    const phone = document.getElementById("phone");
+    if (sc && phone) {
+      this._phMx = 0; this._phMy = 0;
+      this._tilt = (e) => {
+        const r = sc.getBoundingClientRect();
+        this._phMx = (e.clientX - r.left) / r.width - 0.5;
+        this._phMy = (e.clientY - r.top) / r.height - 0.5;
+      };
+      this._tiltReset = () => { this._phMx = 0; this._phMy = 0; };
+      phone.style.transition = "transform .2s ease-out";
+      phone.style.transformStyle = "preserve-3d";
+      sc.addEventListener("mousemove", this._tilt);
+      sc.addEventListener("mouseleave", this._tiltReset);
+    }
+
+    this.initWarpScroll();
+  }
+
+  // ===== HYPERDRIVE SCROLL =====
+  // A cohesive scroll-velocity engine: a 3D data-stream tunnel, content motion-blur,
+  // per-section "chapter" takeovers, and a live cyber HUD. All layers are appended to
+  // <body> so the framework's render diff never touches them.
+  initWarpScroll() {
+    if (this._warpInit) return;
+    this._warpInit = true;
+
+    const RM = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const clamp = (v, a, b) => (v < a ? a : v > b ? b : v);
+    const lerp = (a, b, t) => a + (b - a) * t;
+    const hexToRgb = (h) => {
+      const m = h.replace("#", "");
+      const v = m.length === 3 ? m.split("").map((c) => c + c).join("") : m;
+      const n = parseInt(v, 16);
+      return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+    };
+    const rgba = (h, a) => { const [r, g, b] = hexToRgb(h); return "rgba(" + r + "," + g + "," + b + "," + a + ")"; };
+
+    // ---- section map (label + accent that the whole scene reacts to) ----
+    const SECTIONS = [
+      { sel: "#top",        label: "HOME",       color: "#00e5a0" },
+      { sel: "#about",      label: "ABOUT",      color: "#22d3ee" },
+      { sel: "#skills",     label: "SKILLS",     color: "#a78bfa" },
+      { sel: "#experience", label: "EXPERIENCE", color: "#34d399" },
+      { sel: "#work",       label: "WORK",       color: "#f59e0b" },
+      { sel: "#education",  label: "EDUCATION",  color: "#f472b6" },
+      { sel: "#contact",    label: "CONTACT",    color: "#00e5a0" }
+    ].map((s) => ({ ...s, el: document.querySelector(s.sel) })).filter((s) => s.el);
+    if (!SECTIONS.length) return;
+
+    // ---- layers ----
+    const tunnel = document.createElement("canvas");
+    tunnel.style.cssText = "position:fixed;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;transition:opacity .45s;";
+    document.body.appendChild(tunnel);
+
+    const blur = document.createElement("div");
+    blur.style.cssText = "position:fixed;inset:0;z-index:3;pointer-events:none;opacity:0;transition:opacity .22s;";
+    document.body.appendChild(blur);
+
+    const chapter = document.createElement("div");
+    chapter.style.cssText = "position:fixed;inset:0;z-index:96;pointer-events:none;overflow:hidden;display:grid;place-items:center;";
+    const ring = document.createElement("span");
+    ring.style.cssText = "position:absolute;left:50%;top:50%;border-radius:50%;border:2px solid #fff;transform:translate(-50%,-50%) scale(.05);opacity:0;will-change:transform,opacity;";
+    const word = document.createElement("div");
+    word.style.cssText = "font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:min(23vw,280px);letter-spacing:-.05em;line-height:1;color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.5);opacity:0;white-space:nowrap;will-change:transform,opacity,filter;";
+    chapter.appendChild(ring); chapter.appendChild(word);
+    document.body.appendChild(chapter);
+
+    // Minimal FX toggle. The verbose telemetry HUD (depth/velocity readouts) was
+    // removed; this tiny pill stays only as an unobtrusive off-switch so motion
+    // still degrades gracefully.
+    const hud = document.createElement("div");
+    hud.style.cssText = "position:fixed;left:18px;bottom:16px;z-index:95;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:#8b97a3;display:flex;align-items:center;gap:7px;cursor:pointer;user-select:none;padding:7px 12px 7px 10px;border-radius:999px;background:rgba(7,9,14,.4);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);border:1px solid rgba(255,255,255,.09);opacity:.42;transition:opacity .35s ease,border-color .5s,box-shadow .5s;";
+    hud.innerHTML =
+      '<span data-w="dot" style="width:7px;height:7px;border-radius:50%;background:#00e5a0;box-shadow:0 0 9px #00e5a0;transition:background .45s,box-shadow .45s,opacity .3s;"></span>' +
+      '<span data-w="fxstate">FX</span>';
+    hud.addEventListener("mouseenter", () => { hud.style.opacity = "1"; });
+    hud.addEventListener("mouseleave", () => { hud.style.opacity = ".42"; });
+    document.body.appendChild(hud);
+    const W_ = (k) => hud.querySelector('[data-w="' + k + '"]');
+    const wDot = W_("dot"), wFxState = W_("fxstate");
+
+    this._warpNodes = [tunnel, blur, chapter, hud];
+
+    // ---- FX on/off (persisted; default off under reduced-motion) ----
+    let fxOn = (localStorage.getItem("warpFx") !== "0") && !RM;
+    const setFx = (on) => {
+      fxOn = on;
+      try { localStorage.setItem("warpFx", on ? "1" : "0"); } catch (e) {}
+      wFxState.textContent = on ? "FX" : "FX OFF";
+      wDot.style.opacity = on ? "1" : ".3";
+      tunnel.style.opacity = on ? "1" : ".22";
+      if (!on) blur.style.opacity = "0";
+    };
+    hud.addEventListener("click", () => setFx(!fxOn));
+    setFx(fxOn);
+
+    // ---- tunnel starfield ----
+    const ctx = tunnel.getContext("2d");
+    const DPR = Math.min(window.devicePixelRatio || 1, 2);
+    let W = 0, H = 0, cx = 0, cy = 0, focal = 0, stars = [], isMobile = false;
+    const seed = () => {
+      const count = isMobile ? 90 : Math.min(230, Math.floor((W * H) / 8800));
+      stars = [];
+      for (let i = 0; i < count; i++) stars.push({ x: Math.random() * 2 - 1, y: Math.random() * 2 - 1, z: Math.random() });
+    };
+    const resize = () => {
+      W = window.innerWidth; H = window.innerHeight;
+      isMobile = W < 760;
+      cx = W / 2; cy = H / 2; focal = Math.min(W, H) * 0.62;
+      tunnel.width = W * DPR; tunnel.height = H * DPR;
+      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+      hud.style.display = isMobile ? "none" : "block";
+      seed();
+    };
+    resize();
+    this._warpResize = resize;
+    window.addEventListener("resize", resize);
+
+    // ---- chapter takeover (per-letter 3D flip-in + streak + shockwave) ----
+    const triggerChapter = (s) => {
+      if (!fxOn || RM) return;
+      word.style.perspective = "850px";
+      word.style.transformStyle = "preserve-3d";
+      word.style.webkitTextStroke = "2px " + rgba(s.color, 0.55);
+      word.innerHTML = "";
+      s.label.split("").forEach((ch, i) => {
+        const sp = document.createElement("span");
+        sp.textContent = ch;
+        sp.style.cssText = "display:inline-block;will-change:transform,opacity;backface-visibility:hidden;";
+        word.appendChild(sp);
+        sp.animate([
+          { transform: "rotateY(-95deg) translateZ(-110px)", opacity: 0 },
+          { transform: "rotateY(0deg) translateZ(0)",        opacity: 1, offset: .5 },
+          { transform: "rotateY(0deg) translateZ(0)",        opacity: 1, offset: .72 },
+          { transform: "rotateY(72deg) translateZ(-90px)",   opacity: 0 }
+        ], { duration: 1150, delay: i * 46, easing: "cubic-bezier(.2,.8,.25,1)", fill: "forwards" });
+      });
+      word.animate([
+        { opacity: 0,   transform: "translateX(-22vw) skewX(-12deg)", filter: "blur(6px)" },
+        { opacity: .9,  transform: "translateX(0) skewX(0)",          filter: "blur(0px)", offset: .45 },
+        { opacity: .78, transform: "translateX(0) skewX(0)",          filter: "blur(0px)", offset: .68 },
+        { opacity: 0,   transform: "translateX(20vw) skewX(12deg)",   filter: "blur(6px)" }
+      ], { duration: 1200, easing: "cubic-bezier(.16,.84,.3,1)" });
+      const d = Math.max(W, H) * 0.92;
+      ring.style.width = d + "px"; ring.style.height = d + "px";
+      ring.style.borderColor = rgba(s.color, 0.7);
+      ring.animate([
+        { transform: "translate(-50%,-50%) scale(.04)", opacity: .5 },
+        { transform: "translate(-50%,-50%) scale(1)",   opacity: 0 }
+      ], { duration: 950, easing: "cubic-bezier(.2,.7,.2,1)" });
+    };
+
+    // ---- scroll state ----
+    let lastY = window.scrollY || 0, vel = 0, spd = 0, curIdx = -1;
+    let cur = hexToRgb(SECTIONS[0].color), tgt = cur.slice();
+    let wmx = 0, wmy = 0, camX = 0, camY = 0, roll = 0;   // 3D camera: mouse-look + bank-roll
+    this._warpMouse = (e) => { wmx = e.clientX / window.innerWidth - 0.5; wmy = e.clientY / window.innerHeight - 0.5; };
+    window.addEventListener("mousemove", this._warpMouse, { passive: true });
+
+    const setSection = (i) => {
+      const s = SECTIONS[i];
+      wDot.style.background = s.color;
+      wDot.style.boxShadow = "0 0 9px " + s.color;
+      hud.style.borderColor = rgba(s.color, 0.4);
+      hud.style.boxShadow = "0 6px 22px rgba(0,0,0,.4), 0 0 14px " + rgba(s.color, 0.16);
+    };
+    setSection(0);
+
+    const loop = () => {
+      const y = window.scrollY || (document.scrollingElement ? document.scrollingElement.scrollTop : 0) || 0;
+      const raw = y - lastY; lastY = y;
+      vel += (raw - vel) * 0.18;
+      spd += (Math.abs(raw) - spd) * 0.12;
+      // active section by viewport upper-third
+      const mid = window.innerHeight * 0.42;
+      let idx = 0;
+      for (let i = 0; i < SECTIONS.length; i++) {
+        if (SECTIONS[i].el.getBoundingClientRect().top <= mid) idx = i;
+      }
+      if (idx !== curIdx) {
+        const first = curIdx === -1;
+        curIdx = idx;
+        tgt = hexToRgb(SECTIONS[idx].color);
+        setSection(idx);
+        if (!first) triggerChapter(SECTIONS[idx]);
+      }
+
+      for (let k = 0; k < 3; k++) cur[k] = lerp(cur[k], tgt[k], 0.06);
+      const cr = cur[0] | 0, cg = cur[1] | 0, cb = cur[2] | 0;
+      const sf = fxOn ? 1 : 0.22;
+
+      // ---- 3D camera: vanishing point follows the mouse; bank-roll + FOV punch with speed ----
+      camX += (wmx * W * 0.14 - camX) * 0.06;
+      camY += (wmy * H * 0.14 - camY) * 0.06;
+      roll += ((clamp(vel * 0.0006, -0.22, 0.22) + wmx * 0.06) * (fxOn ? 1 : 0.3) - roll) * 0.07;
+      const ccx = cx + camX, ccy = cy + camY;
+      const fdyn = focal * (1 + clamp(spd * 0.004, 0, 0.3));
+
+      // ---- draw data-stream tunnel ----
+      ctx.clearRect(0, 0, W, H);
+      ctx.save();
+      ctx.translate(cx, cy); ctx.rotate(roll); ctx.translate(-cx, -cy);
+      const fwd = (vel * 0.9 + 1.15) * sf;
+      const split = clamp(spd * 0.05, 0, 3) * (fxOn ? 1 : 0);
+      for (const st of stars) {
+        st.z -= fwd * 0.0009;
+        if (st.z <= 0.02) { st.z += 1; st.x = Math.random() * 2 - 1; st.y = Math.random() * 2 - 1; }
+        else if (st.z > 1.04) { st.z -= 1; st.x = Math.random() * 2 - 1; st.y = Math.random() * 2 - 1; }
+        const f1 = fdyn / st.z;
+        const x1 = ccx + st.x * f1, y1 = ccy + st.y * f1;
+        if (x1 < -80 || x1 > W + 80 || y1 < -80 || y1 > H + 80) continue;
+        const zt = st.z + clamp(Math.abs(vel) * 0.0016, 0, 0.05) + 0.004;
+        const f2 = fdyn / zt;
+        const x2 = ccx + st.x * f2, y2 = ccy + st.y * f2;
+        const a = clamp((1 - st.z) * 0.9, 0, 0.9);
+        const lw = clamp((1 - st.z) * 2.2, 0.4, 2.4);
+        ctx.lineWidth = lw;
+        if (split > 0.6) {
+          ctx.strokeStyle = "rgba(255,45,85," + (a * 0.5) + ")";
+          ctx.beginPath(); ctx.moveTo(x2 - split, y2); ctx.lineTo(x1 - split, y1); ctx.stroke();
+          ctx.strokeStyle = "rgba(45,185,255," + (a * 0.5) + ")";
+          ctx.beginPath(); ctx.moveTo(x2 + split, y2); ctx.lineTo(x1 + split, y1); ctx.stroke();
+        }
+        ctx.strokeStyle = "rgba(" + cr + "," + cg + "," + cb + "," + a + ")";
+        ctx.beginPath(); ctx.moveTo(x2, y2); ctx.lineTo(x1, y1); ctx.stroke();
+        ctx.fillStyle = "rgba(" + Math.min(255, cr + 70) + "," + Math.min(255, cg + 70) + "," + Math.min(255, cb + 70) + "," + a + ")";
+        ctx.beginPath(); ctx.arc(x1, y1, lw * 0.6, 0, 6.283); ctx.fill();
+      }
+      ctx.restore();
+
+      // ---- velocity motion-blur on content ----
+      if (fxOn && !isMobile && !RM) {
+        const bpx = clamp((spd - 2) * 0.16, 0, 5.5);
+        if (bpx > 0.25) {
+          blur.style.opacity = "1";
+          blur.style.backdropFilter = blur.style.webkitBackdropFilter = "blur(" + bpx.toFixed(2) + "px)";
+        } else {
+          blur.style.opacity = "0";
+        }
+      }
+
+      this._warpRaf = requestAnimationFrame(loop);
+    };
+    loop();
+  }
+
+  // Holographic 3D tilt + cursor-tracking specular glare on every major card.
+  // Only inline styles are touched (no DOM restructuring), so the framework's
+  // render diff is never disturbed.
+  init3DCards() {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (window.matchMedia && !window.matchMedia("(pointer:fine)").matches) return;
+    const selectors = [
+      "#skills > div:last-child > div",
+      "#experience [data-reveal] > div",
+      "#education .two-col > div",
+      "#about .two-col > [data-reveal]:last-child > div:not(:first-child)",
+      "#contact > [data-reveal]"
+    ];
+    const cards = [];
+    selectors.forEach((s) => document.querySelectorAll(s).forEach((el) => cards.push(el)));
+    cards.forEach((card) => {
+      let baseImg = getComputedStyle(card).backgroundImage;
+      if (baseImg === "none") baseImg = "";
+      const baseShadow = card.style.boxShadow || "";
+      card.style.transformStyle = "preserve-3d";
+      card.style.willChange = "transform";
+      card.addEventListener("mouseenter", () => {
+        card.style.transition = "transform .14s ease-out, box-shadow .25s ease-out";
+        card.style.zIndex = "3";
+      });
+      card.addEventListener("mousemove", (e) => {
+        const r = card.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width;
+        const py = (e.clientY - r.top) / r.height;
+        const rx = (0.5 - py) * 13, ry = (px - 0.5) * 13;
+        card.style.transform = "perspective(950px) rotateX(" + rx.toFixed(2) + "deg) rotateY(" + ry.toFixed(2) + "deg) translateZ(16px)";
+        card.style.backgroundImage = "radial-gradient(circle at " + (px * 100).toFixed(1) + "% " + (py * 100).toFixed(1) + "%, rgba(255,255,255,.17), rgba(255,255,255,.04) 32%, transparent 62%)" + (baseImg ? ", " + baseImg : "");
+        card.style.boxShadow = "0 26px 60px rgba(0,0,0,.45)" + (baseShadow ? ", " + baseShadow : "");
+      });
+      card.addEventListener("mouseleave", () => {
+        card.style.transform = "";
+        card.style.backgroundImage = baseImg;
+        card.style.boxShadow = baseShadow;
+        card.style.zIndex = "";
+      });
+    });
+  }
+
+  heroScreen(type, a) {
+    const bar = `<div style="display:flex;justify-content:space-between;align-items:center;padding:40px 20px 8px;"><span style="font:600 12px 'JetBrains Mono',monospace;color:#7a8a98;">9:41</span><span style="font:600 11px 'JetBrains Mono',monospace;color:#7a8a98;letter-spacing:1px;">5G  ▮▮▮</span></div>`;
+    const coin = (n, s, amt) => `<div style="display:flex;align-items:center;gap:11px;padding:9px 12px;border-radius:13px;background:rgba(255,255,255,0.04);"><span style="width:30px;height:30px;border-radius:50%;background:${a}26;color:${a};display:grid;place-items:center;font:700 10px 'JetBrains Mono',monospace;">${s}</span><div style="flex:1;"><div style="font:600 13px 'Space Grotesk',sans-serif;color:#fff;">${n}</div><div style="font:500 11px 'JetBrains Mono',monospace;color:#7a8a98;">${amt} ${s}</div></div><span style="width:6px;height:6px;border-radius:50%;background:${a};box-shadow:0 0 8px ${a};"></span></div>`;
+    const sec = (l) => `<div style="display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:11px;background:rgba(255,255,255,0.04);"><span style="color:${a};font:700 12px 'JetBrains Mono',monospace;">✓</span><span style="font:500 12px 'Space Grotesk',sans-serif;color:#cdd8e2;">${l}</span></div>`;
+    const prow = (l, v) => `<div style="display:flex;justify-content:space-between;padding:9px 12px;border-radius:11px;background:rgba(255,255,255,0.04);"><span style="font:500 12px 'Space Grotesk',sans-serif;color:#cdd8e2;">${l}</span><span style="font:600 12px 'JetBrains Mono',monospace;color:${a};">${v}</span></div>`;
+    let body = "";
+    if (type === "wallet") {
+      body = `<div style="padding:4px 20px 0;"><div style="font:600 12px 'JetBrains Mono',monospace;color:#7a8a98;">TokenB · Total Balance</div><div style="margin-top:7px;font:700 31px 'Space Grotesk',sans-serif;color:#fff;">$48,920<span style="color:${a};">.24</span></div><div style="margin-top:5px;font:600 12px 'JetBrains Mono',monospace;color:${a};">▲ +12.4% today</div></div>
+      <div style="margin:15px 20px;height:66px;border-radius:14px;background:linear-gradient(120deg,${a},transparent);position:relative;overflow:hidden;"><svg viewBox="0 0 200 66" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;"><path d="M0,48 C30,44 42,18 70,26 C100,34 120,8 150,16 C176,22 190,12 200,15" fill="none" stroke="#fff" stroke-width="2.5" opacity="0.9"/></svg></div>
+      <div style="padding:0 16px;display:flex;flex-direction:column;gap:9px;">${coin("Ethereum","ETH","12.4")}${coin("Bitcoin","BTC","0.82")}${coin("Solana","SOL","340")}</div>`;
+    } else if (type === "secure") {
+      body = `<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:0 22px;">
+        <div style="width:92px;height:104px;background:linear-gradient(160deg,${a},transparent);clip-path:polygon(50% 0,100% 18%,100% 60%,50% 100%,0 60%,0 18%);display:grid;place-items:center;box-shadow:0 0 44px ${a}66;"><div style="width:24px;height:13px;border-left:4px solid #05070b;border-bottom:4px solid #05070b;transform:translateY(-4px) rotate(-45deg);"></div></div>
+        <div style="font:700 18px 'Space Grotesk',sans-serif;color:#fff;">Face ID Secured</div>
+        <div style="font:500 11px 'JetBrains Mono',monospace;color:#7a8a98;text-align:center;">AES-256 · Secure Enclave · Keychain</div>
+        <div style="display:flex;flex-direction:column;gap:8px;width:100%;">${sec("Biometric unlock")}${sec("Encrypted key vault")}${sec("SSL certificate pinning")}</div></div>`;
+    } else if (type === "perf") {
+      const hs = [38, 54, 46, 66, 58, 78, 70, 90];
+      const bars = hs.map((h) => `<div style="flex:1;height:${h * 1.3}px;border-radius:5px 5px 0 0;background:linear-gradient(${a},${a}22);"></div>`).join("");
+      body = `<div style="padding:4px 20px 0;"><div style="font:600 12px 'JetBrains Mono',monospace;color:#7a8a98;">Crash-free rate</div><div style="margin-top:5px;font:700 40px 'Space Grotesk',sans-serif;color:#fff;">99.9<span style="color:${a};">%</span></div></div>
+      <div style="display:flex;align-items:flex-end;gap:7px;height:130px;padding:20px 22px 6px;">${bars}</div>
+      <div style="padding:6px 16px 20px;display:flex;flex-direction:column;gap:8px;">${prow("Launch time","0.4s")}${prow("Memory","Optimized")}${prow("Coverage","TDD · XCTest")}</div>`;
+    } else {
+      body = `<div style="padding:4px 18px 0;"><div style="font:700 20px 'Space Grotesk',sans-serif;color:#fff;">Components</div><div style="font:500 11px 'JetBrains Mono',monospace;color:#7a8a98;margin-top:2px;">SwiftUI · Human Interface Guidelines</div></div>
+      <div style="padding:16px;display:flex;flex-direction:column;gap:11px;flex:1;">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border-radius:13px;background:rgba(255,255,255,0.04);"><span style="font:600 13px 'Space Grotesk',sans-serif;color:#fff;">Dark Mode</span><div style="width:44px;height:26px;border-radius:13px;background:${a};position:relative;box-shadow:0 0 14px ${a}88;"><div style="position:absolute;top:3px;right:3px;width:20px;height:20px;border-radius:50%;background:#fff;"></div></div></div>
+        <div style="padding:12px 14px;border-radius:13px;background:rgba(255,255,255,0.04);"><div style="font:600 12px 'Space Grotesk',sans-serif;color:#fff;margin-bottom:9px;">Volume</div><div style="height:5px;border-radius:3px;background:rgba(255,255,255,0.12);position:relative;"><div style="position:absolute;left:0;top:0;height:100%;width:68%;border-radius:3px;background:${a};"></div><div style="position:absolute;left:65%;top:50%;transform:translate(-50%,-50%);width:15px;height:15px;border-radius:50%;background:#fff;box-shadow:0 0 10px ${a};"></div></div></div>
+        <div style="display:flex;gap:5px;padding:5px;border-radius:12px;background:rgba(255,255,255,0.05);"><div style="flex:1;text-align:center;padding:8px 0;border-radius:9px;background:${a};color:#05070b;font:700 12px 'Space Grotesk',sans-serif;">Day</div><div style="flex:1;text-align:center;padding:8px 0;font:600 12px 'Space Grotesk',sans-serif;color:#9fb0c0;">Week</div><div style="flex:1;text-align:center;padding:8px 0;font:600 12px 'Space Grotesk',sans-serif;color:#9fb0c0;">Month</div></div>
+        <div style="margin-top:auto;text-align:center;padding:13px;border-radius:13px;background:linear-gradient(135deg,${a},${a}99);color:#05070b;font:700 14px 'Space Grotesk',sans-serif;box-shadow:0 8px 26px ${a}55;">Continue</div></div>`;
+    }
+    return `<div style="height:100%;display:flex;flex-direction:column;">${bar}${body}</div>`;
+  }
+
+  heroStates() {
+    return [
+      { eyebrow: "SENIOR iOS DEVELOPER · BLOCKCHAIN", head: "Muhammad<br>Naeem Akram", sub: "7+ years architecting secure, high-performance crypto wallets and fintech apps from Dubai.", accent: "#00e5a0", rotY: -16, screen: this.heroScreen("wallet", "#00e5a0") },
+      { eyebrow: "01 · BLOCKCHAIN SECURITY", head: "Built for<br>trust.", sub: "Self-custody wallets with BIP-39, Secure Enclave, and biometric protection across 8 networks.", accent: "#22d3ee", rotY: 13, screen: this.heroScreen("secure", "#22d3ee") },
+      { eyebrow: "02 · SCALE & RELIABILITY", head: "Serving<br>millions.", sub: "Apps for 10M+ users with 99.9% crash-free rates through clean architecture and robust testing.", accent: "#34d399", rotY: -12, screen: this.heroScreen("perf", "#34d399") },
+      { eyebrow: "03 · EXPERTISE", head: "Swift &<br>SwiftUI.", sub: "Expert in MVVM, async/await, Combine, and production-grade iOS development practices.", accent: "#a78bfa", rotY: 18, screen: this.heroScreen("craft", "#a78bfa") }
+    ];
+  }
+
+  initHero() {
+    // guard against double-invocation (double mount / StrictMode) which would
+    // spawn competing autoplay loops that fight over opacity
+    if (this._heroInit) return;
+    this._heroInit = true;
+    if (this._heroTimer) clearInterval(this._heroTimer);
+    if (this._heroRaf) cancelAnimationFrame(this._heroRaf);
+    const header = document.getElementById("top");
+    const headline = document.getElementById("hero-headline");
+    const eyebrow = document.getElementById("hero-eyebrow");
+    const sub = document.getElementById("hero-sub");
+    const screen = document.getElementById("hero-screen");
+    const phone = document.getElementById("hero-phone");
+    const dots = [...document.querySelectorAll("#hero-dots button")];
+    if (!header || !phone || !screen) return;
+    const states = this.heroStates();
+    let idx = 0, mx = 0, my = 0, targetRot = states[0].rotY, curRot = states[0].rotY, curX = 0;
+
+    const apply = (i, instant) => {
+      idx = i;
+      const s = states[i];
+      header.style.setProperty("--scene", s.accent);
+      targetRot = s.rotY;
+      eyebrow.textContent = s.eyebrow;
+
+      // For state 0, show wallet image; for others, show generated content
+      if (i === 0) {
+        screen.innerHTML = '<img src="assets/wallet-mockup.png" alt="Wallet App" style="position:relative;width:100%;height:100%;border-radius:32px;overflow:hidden;object-fit:cover;display:block;">';
+      } else {
+        screen.innerHTML = s.screen;
+      }
+
+      if (instant) {
+        headline.innerHTML = s.head; sub.textContent = s.sub;
+      } else {
+        headline.style.opacity = "0"; headline.style.transform = "translateY(16px)";
+        sub.style.opacity = "0";
+        setTimeout(() => {
+          headline.innerHTML = s.head; sub.textContent = s.sub;
+          headline.style.opacity = "1"; headline.style.transform = "none"; sub.style.opacity = "1";
+        }, 250);
+      }
+      dots.forEach((d, k) => {
+        d.style.background = k === i ? s.accent : "#2a3a48";
+        d.style.width = k === i ? "52px" : "34px";
+        d.style.boxShadow = k === i ? "0 0 12px " + s.accent : "none";
+      });
+    };
+    apply(0, true);
+
+    const startTimer = () => { this._heroTimer = setInterval(() => apply((idx + 1) % states.length), 4600); };
+    startTimer();
+    dots.forEach((d) => d.addEventListener("click", () => {
+      clearInterval(this._heroTimer);
+      apply(parseInt(d.getAttribute("data-hs"), 10));
+      startTimer();
+    }));
+
+    this._heroMouse = (e) => {
+      const r = header.getBoundingClientRect();
+      mx = (e.clientX - r.left) / r.width - 0.5;
+      my = (e.clientY - r.top) / r.height - 0.5;
+    };
+    header.addEventListener("mousemove", this._heroMouse);
+
+    const loop = () => {
+      curRot += ((targetRot + mx * 16) - curRot) * 0.06;
+      curX += ((-my * 10) - curX) * 0.06;
+      phone.style.transform = "rotateY(" + curRot.toFixed(2) + "deg) rotateX(" + curX.toFixed(2) + "deg)";
+      this._heroRaf = requestAnimationFrame(loop);
+    };
+    loop();
+  }
+
+  componentWillUnmount() {
+    if (this._cur) cancelAnimationFrame(this._cur);
+    if (this._raf) cancelAnimationFrame(this._raf);
+    if (this._glow) this._glow.remove();
+    if (this._onMove) window.removeEventListener("mousemove", this._onMove);
+    if (this._resize) window.removeEventListener("resize", this._resize);
+    if (this._io) this._io.disconnect();
+    if (this._cio) this._cio.disconnect();
+    if (this._fx) cancelAnimationFrame(this._fx);
+    if (this._safety) clearTimeout(this._safety);
+    if (this._heroTimer) clearInterval(this._heroTimer);
+    if (this._heroRaf) cancelAnimationFrame(this._heroRaf);
+    if (this._bg3dRaf) cancelAnimationFrame(this._bg3dRaf);
+    if (this._bg3dMouse) window.removeEventListener("mousemove", this._bg3dMouse);
+    if (this._warpRaf) cancelAnimationFrame(this._warpRaf);
+    if (this._warpResize) window.removeEventListener("resize", this._warpResize);
+    if (this._warpMouse) window.removeEventListener("mousemove", this._warpMouse);
+    if (this._warpNodes) this._warpNodes.forEach((n) => n && n.remove());
+  }
+}
+</script>
 </body>
 </html>
